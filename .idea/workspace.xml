@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="初始化后台中">
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="魏梦 修复idea问题">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/src/main/java/com/gr/guoranserver/GuoranServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/src/test/java/com/gr/guoranserver/GuoranServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +97,7 @@
   </component>
   <component name="RunManager" selected="JUnit.GuoranServerApplicationTests.contextLoads (1)">
     <configuration name="GuoranServerApplicationTests.contextLoads (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guoran-server (1)" />
+      <module name="guoran-server" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.guoran.server.*" />
@@ -141,7 +143,7 @@
       </method>
     </configuration>
     <configuration name="GuoranServerApplication (3)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="guoran-server (1)" />
+      <module name="guoran-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.guoran.server.GuoranServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,6 +152,13 @@
     <configuration name="GuoranServerApplication (4)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="guoran-server (2)" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.gr.guoranserver.GuoranServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuoranServerApplication (5)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="guoran-server (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.guoran.server.GuoranServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -200,7 +209,8 @@
     <MESSAGE value="添加了忽略文件" />
     <MESSAGE value="添加了主后台工程" />
     <MESSAGE value="初始化后台中" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化后台中" />
+    <MESSAGE value="魏梦 修复idea问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="魏梦 修复idea问题" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

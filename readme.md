@@ -4,6 +4,20 @@
 
 这是一个企业管理项目
 
+
+# 后端项目结构
+```java
+-com.guoran.server
+  --config
+  --test //个人名字或业务名
+    ---controller //控制层
+    ---model //实体类
+    ---repository //dao层
+    ---service //业务层
+    ---service.impl //业务层实现
+```
+
+
 # 所需环境
 
 前端：Node.js@16
