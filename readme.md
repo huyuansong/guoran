@@ -8,7 +8,7 @@
 
 前端：Node.js@16
 
-后端: Java@8、Mysql@5.8、SpringBoot@2.2.4
+后端: Java@8、Mysql@5.8、SpringBoot@2.2.1
 
 运维: ngnix
 
