@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/guoran-application/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/guoran-application/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/guoran-server/guoran-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/guoran-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/guoran-server/src/main/resources" charset="UTF-8" />
   </component>
