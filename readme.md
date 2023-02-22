@@ -19,7 +19,7 @@
   |    ---repository.xml //dao层实现
   |  ---service //业务层
   |    ---service.impl //业务层实现  
-  |wei_customer //实例代码
+  |weicustomer //实例代码
   |  ---controller //控制层
   |  ---model //实体类
   |  ---repository //dao层
