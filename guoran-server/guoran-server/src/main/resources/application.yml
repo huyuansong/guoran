@@ -11,3 +11,5 @@ spring:
 mybatis:
   mapper-locations: classpath:com/guoran/server/test/repository/xml/*.xml
   type-aliases-package: com.guoran.server.**.model
+#  configuration:
+#    map-underscore-to-camel-case: true
