@@ -1,0 +1,137 @@
+Index: guoran-server/src/test/java/com/gr/guoranserver/GuoranServerApplicationTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/guoran-server/src/test/java/com/gr/guoranserver/GuoranServerApplicationTests.java b/guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java
+rename from guoran-server/src/test/java/com/gr/guoranserver/GuoranServerApplicationTests.java
+rename to guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java
+--- a/guoran-server/src/test/java/com/gr/guoranserver/GuoranServerApplicationTests.java	(revision 4046c8c6fdbcedd171071ae322dee98f92101e2d)
++++ b/guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java	(date 1677043131005)
+@@ -1,4 +1,4 @@
+-package com.gr.guoranserver;
++package com.guoran.server;
+ 
+ import org.junit.jupiter.api.Test;
+ import org.springframework.boot.test.context.SpringBootTest;
+Index: guoran-server/pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n\txsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n\t<modelVersion>4.0.0</modelVersion>\r\n\t<parent>\r\n\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t<artifactId>spring-boot-starter-parent</artifactId>\r\n\t\t<version>2.2.1.RELEASE</version>\r\n\t\t<relativePath/> <!-- lookup parent from repository -->\r\n\t</parent>\r\n\t<groupId>com.gr</groupId>\r\n\t<artifactId>guoran-server</artifactId>\r\n\t<version>0.0.1-SNAPSHOT</version>\r\n\t<name>guoran-server</name>\r\n\t<description>guoran-server</description>\r\n\t<properties>\r\n\t\t<java.version>1.8</java.version>\r\n\t</properties>\r\n\t<dependencies>\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-starter</artifactId>\r\n\t\t</dependency>\r\n\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t<artifactId>spring-boot-starter-test</artifactId>\r\n\t\t\t<scope>test</scope>\r\n\t\t</dependency>\r\n\r\n\t\t<dependency>\r\n\t\t\t<groupId>org.projectlombok</groupId>\r\n\t\t\t<artifactId>lombok</artifactId>\r\n\t\t</dependency>\r\n\r\n\r\n\t</dependencies>\r\n\r\n\t<build>\r\n\t\t<plugins>\r\n\t\t\t<plugin>\r\n\t\t\t\t<groupId>org.springframework.boot</groupId>\r\n\t\t\t\t<artifactId>spring-boot-maven-plugin</artifactId>\r\n\t\t\t</plugin>\r\n\t\t</plugins>\r\n\t</build>\r\n\r\n</project>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/guoran-server/pom.xml b/guoran-server/pom.xml
+--- a/guoran-server/pom.xml	(revision 4046c8c6fdbcedd171071ae322dee98f92101e2d)
++++ b/guoran-server/pom.xml	(date 1677042891897)
+@@ -33,6 +33,35 @@
+ 			<artifactId>lombok</artifactId>
+ 		</dependency>
+ 
++		<dependency>
++			<groupId>org.springframework.boot</groupId>
++			<artifactId>spring-boot-starter-security</artifactId>
++		</dependency>
++
++		<dependency>
++			<groupId>org.mybatis.spring.boot</groupId>
++			<artifactId>mybatis-spring-boot-starter</artifactId>
++			<version>2.1.1</version>
++		</dependency>
++
++		<dependency>
++			<groupId>mysql</groupId>
++			<artifactId>mysql-connector-java</artifactId>
++			<version>5.1.49</version>
++		</dependency>
++
++		<!-- swagger -->
++		<dependency>
++			<groupId>io.springfox</groupId>
++			<artifactId>springfox-swagger-ui</artifactId>
++			<version>2.7.0</version>
++		</dependency>
++
++		<dependency>
++			<groupId>io.springfox</groupId>
++			<artifactId>springfox-swagger2</artifactId>
++			<version>2.7.0</version>
++		</dependency>
+ 
+ 	</dependencies>
+ 
+Index: guoran-server/src/main/java/com/gr/guoranserver/GuoranServerApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/guoran-server/src/main/java/com/gr/guoranserver/GuoranServerApplication.java b/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java
+rename from guoran-server/src/main/java/com/gr/guoranserver/GuoranServerApplication.java
+rename to guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java
+--- a/guoran-server/src/main/java/com/gr/guoranserver/GuoranServerApplication.java	(revision 4046c8c6fdbcedd171071ae322dee98f92101e2d)
++++ b/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java	(date 1677043131040)
+@@ -1,4 +1,4 @@
+-package com.gr.guoranserver;
++package com.guoran.server;
+ 
+ import org.springframework.boot.SpringApplication;
+ import org.springframework.boot.autoconfigure.SpringBootApplication;
+Index: guoran-server/src/main/java/com/guoran/server/config/swagger/SwaggerConfig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/guoran-server/src/main/java/com/guoran/server/config/swagger/SwaggerConfig.java b/guoran-server/src/main/java/com/guoran/server/config/swagger/SwaggerConfig.java
+new file mode 100644
+--- /dev/null	(date 1677043131023)
++++ b/guoran-server/src/main/java/com/guoran/server/config/swagger/SwaggerConfig.java	(date 1677043131023)
+@@ -0,0 +1,46 @@
++package com.guoran.server.config.swagger;
++
++import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
++import org.springframework.context.annotation.Bean;
++import org.springframework.context.annotation.Configuration;
++import springfox.documentation.builders.ApiInfoBuilder;
++import springfox.documentation.builders.PathSelectors;
++import springfox.documentation.builders.RequestHandlerSelectors;
++import springfox.documentation.service.ApiInfo;
++import springfox.documentation.service.Contact;
++import springfox.documentation.spi.DocumentationType;
++import springfox.documentation.spring.web.plugins.Docket;
++import springfox.documentation.swagger2.annotations.EnableSwagger2;
++
++
++@Configuration
++@EnableSwagger2
++@ConditionalOnProperty (name = "swagger.enable",  havingValue = "true")
++public class SwaggerConfig {
++	@Bean
++	public Docket createRestApi() {
++		return new Docket(DocumentationType.SWAGGER_2)
++				.groupName("wei")
++				.apiInfo(apiInfo())
++				.select()
++				// 为当前包路径
++				.apis(RequestHandlerSelectors.basePackage("com.guoran.server"))
++				.paths(PathSelectors.any())
++				.build();
++	}
++	// 构建 api文档的详细信息函数,注意这里的注解引用的是哪个
++	private ApiInfo apiInfo() {
++		return new ApiInfoBuilder()
++				// 页面标题
++				.title("接口文档")
++				// 创建人信息
++				.contact(new Contact("",null,""))
++				// 版本号
++				.version("1.0")
++				// 描述
++				.description("API 描述")
++				.build();
++	}
++}
++
++
+diff --git a/guoran-server/src/main/resources/application.properties b/guoran-server/src/main/resources/application.yml
+rename from guoran-server/src/main/resources/application.properties
+rename to guoran-server/src/main/resources/application.yml

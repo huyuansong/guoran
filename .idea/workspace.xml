@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="初始化后台中">
+      <change afterPath="$PROJECT_DIR$/guoran-server/src/main/java/com/guoran/server/test/model/balance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guoran-server/src/main/java/com/guoran/server/test/repository/balancerepostiory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guoran-server/src/main/java/com/guoran/server/test/repository/xml/balancerepostiory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2M4mk8B7pXgiKdlV6o5EO5TO6EP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "C:/Users/Wei/Desktop/期末项目/guoran/guoran-server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.41379312",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
+      <recent name="C:\Users\Wei\Desktop\期末项目\guoran\.idea" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Wei\Desktop\期末项目\guoran\guoran-server\src\main\java\com\guoran\server\test\repository\xml" />
+      <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.GuoranServerApplicationTests.contextLoads">
+    <configuration name="GuoranServerApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guoran-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.guoran.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.guoran.server" />
+      <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuoranServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="guoran-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.guoran.server.GuoranServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuoranServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="guoran-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gr.guoranserver.GuoranServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="添加了忽略文件" />
+    <MESSAGE value="添加了主后台工程" />
+    <MESSAGE value="初始化后台中" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化后台中" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
