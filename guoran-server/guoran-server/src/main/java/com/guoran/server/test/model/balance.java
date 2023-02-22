@@ -10,5 +10,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class balance {
 	private String id;
-	private String account_name;
+	private String customer_id;
+	private String user_name;
+	private String taxpayer_identification;
+	private String stage_first;
+	private String compensate;
+	private String collection;
 }

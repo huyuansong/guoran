@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="增加swagger_魏梦">
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="通过基础测试可以进行查询操作_魏梦">
+      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/wei_customer/model/customer_bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/wei_customer/repository/balancerepostiory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/wei_customer/repository/xml/balancerepostiory.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/test/repository/xml/balancerepostiory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/test/repository/xml/balancerepostiory.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +64,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/Wei/Desktop/期末项目/guoran",
+    "last_opened_file_path": "C:/Users/Wei/Desktop/期末项目/guoran/guoran-server/guoran-server/src/main/java/com/guoran/server/wei_customer",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -77,6 +83,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Wei\Desktop\期末项目\guoran\guoran-server\guoran-server\src\main\java\com\guoran\server\wei_customer" />
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran\.idea" />
     </key>
@@ -95,7 +102,22 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GuoranServerApplicationTests.contextLoads (2)">
+  <component name="RunManager" selected="JUnit.GuoranServerApplicationTests">
+    <configuration name="GuoranServerApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guoran-server (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.guoran.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.guoran.server" />
+      <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GuoranServerApplicationTests.contextLoads (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="guoran-server" />
       <extension name="coverage">
@@ -188,6 +210,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GuoranServerApplicationTests" />
         <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads (2)" />
         <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads (1)" />
         <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads" />
@@ -229,7 +252,8 @@
     <MESSAGE value="魏梦 修复idea问题" />
     <MESSAGE value="增加项目目录了规范_魏梦" />
     <MESSAGE value="增加swagger_魏梦" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加swagger_魏梦" />
+    <MESSAGE value="通过基础测试可以进行查询操作_魏梦" />
+    <option name="LAST_COMMIT_MESSAGE" value="通过基础测试可以进行查询操作_魏梦" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
