@@ -31,3 +31,4 @@ build/
 
 ### VS Code ###
 .vscode/
+.guoran-server/guoran-server/src/main/java/com/guoran/server/**/repository/xml/

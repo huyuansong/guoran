@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="修复了描述bug_魏梦">
-      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/common/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/controller/customerBankController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/model/vto/customer_bank_vto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/service/customerBankService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/service/impl/customerBankServiceImpl.java" afterDir="false" />
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="添加了swagger_魏梦">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/config/swagger/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/config/swagger/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/controller/customerBankController.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/controller/customerBankController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -286,7 +281,8 @@
     <MESSAGE value="简化了项目结构_魏梦" />
     <MESSAGE value="优化了代码可以进行正常开发了，加入了开发文档dev_doc.md_魏梦" />
     <MESSAGE value="修复了描述bug_魏梦" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复了描述bug_魏梦" />
+    <MESSAGE value="添加了swagger_魏梦" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了swagger_魏梦" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

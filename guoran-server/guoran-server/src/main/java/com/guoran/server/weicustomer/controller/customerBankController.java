@@ -7,7 +7,7 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-@Api (tags = "客户管理-预收余额 ")
+@Api (tags = "客户管理-客户银行信息 ")
 @RestController
 public class customerBankController {
 	@Autowired
@@ -15,7 +15,7 @@ public class customerBankController {
 
 	@ApiOperation (value = "客户银行信息", notes = "获取客户银行信息")
 	@GetMapping ("/customer/bank")
-	public Object CustomerBankGet() {
+	public Result CustomerBankGet() {
 		return Result.success(CustomerBankService.findAll());
 	}
 
