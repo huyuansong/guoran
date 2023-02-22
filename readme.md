@@ -2,7 +2,7 @@
 # 项目介绍
 
 
-<h3 style="color:red;background-color:#666">666</h3>
+<h3 style="color:red;">666</h3>
 
 我是项目发起人
 
