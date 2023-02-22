@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="增加项目目录了规范_魏梦">
-      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/config/swagger/WebMvcConfigurer.java" afterDir="false" />
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="增加swagger_魏梦">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/test/repository/balancerepostiory.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/test/repository/balancerepostiory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +228,8 @@
     <MESSAGE value="初始化后台中" />
     <MESSAGE value="魏梦 修复idea问题" />
     <MESSAGE value="增加项目目录了规范_魏梦" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加项目目录了规范_魏梦" />
+    <MESSAGE value="增加swagger_魏梦" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加swagger_魏梦" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
