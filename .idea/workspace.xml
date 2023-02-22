@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="通过基础测试可以进行查询操作_魏梦">
-      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/wei_customer/model/customer_bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/wei_customer/repository/balancerepostiory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/wei_customer/repository/xml/balancerepostiory.xml" afterDir="false" />
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="实例代码_魏梦">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/test/repository/xml/balancerepostiory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/test/repository/xml/balancerepostiory.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +247,8 @@
     <MESSAGE value="增加项目目录了规范_魏梦" />
     <MESSAGE value="增加swagger_魏梦" />
     <MESSAGE value="通过基础测试可以进行查询操作_魏梦" />
-    <option name="LAST_COMMIT_MESSAGE" value="通过基础测试可以进行查询操作_魏梦" />
+    <MESSAGE value="实例代码_魏梦" />
+    <option name="LAST_COMMIT_MESSAGE" value="实例代码_魏梦" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

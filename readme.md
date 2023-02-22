@@ -8,15 +8,24 @@
 # 后端项目结构
 ```java
 -com.guoran.server
-  --config //配置类
-    ---SwaggerConfig //swagger配置
-  --test //个人名字或业务名
-    ---controller //控制层
-    ---model //实体类
-    ---repository //dao层
-    ---service //业务层
-    ---service.impl //业务层实现
-  --common //工具类
+  |config //配置类
+  | ---SwaggerConfig //swagger配置
+  |common //工具类
+  |test //个人名字或业务名
+  |  ---controller //控制层
+  |  ---model //实体类
+  |  ---repository //dao层
+  |    ---repository.xml //dao层实现
+  |  ---service //业务层
+  |    ---service.impl //业务层实现  
+  |wei_customer //实例代码
+  |  ---controller //控制层
+  |  ---model //实体类
+  |  ---repository //dao层
+  |    ---repository.xml //dao层实现
+  |  ---service //业务层
+  |    ---service.impl //业务层实现 
+  |springboot启动类
 ```
 
 
