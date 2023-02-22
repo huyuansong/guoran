@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="增加项目目录了规范_魏梦">
+      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/config/swagger/WebMvcConfigurer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/test/repository/balancerepostiory.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/test/repository/balancerepostiory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +88,9 @@
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran\guoran-server\src\main\java\com\guoran\server\test\repository\xml" />
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.guoran.server.config.swagger" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -92,9 +99,25 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GuoranServerApplicationTests.contextLoads (1)">
+  <component name="RunManager" selected="JUnit.GuoranServerApplicationTests.contextLoads (2)">
     <configuration name="GuoranServerApplicationTests.contextLoads (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="guoran-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.guoran.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.guoran.server" />
+      <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuoranServerApplicationTests.contextLoads (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guoran-server (1)" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.guoran.server.*" />
@@ -169,6 +192,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads (2)" />
         <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads (1)" />
         <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads" />
       </list>

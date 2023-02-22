@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 
-@MapperScan("com.guoran.server.test.repository")
+//@MapperScan("com.guoran.server.test.repository")
 @SpringBootApplication
 public class GuoranServerApplication {
 
