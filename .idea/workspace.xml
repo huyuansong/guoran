@@ -4,41 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="修正了魏梦的代码结构">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="初始化后台中">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/BaseOfConcurrencySafeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/DynamicSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/FileterOperatorEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/FilterGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/FilterRule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/PageQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/PlanningReportQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/model/OrderManagementSalesOrderEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/repository/OrderManagementSalesOrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/resouce/OrderManagementSalesOrderResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/OrderManagementSalesOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/impl/OrderManagementSalesOrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/vmodel/ManagementSalesDetailsVM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/vmodel/OrderManagementSalesOrderVM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/vmodel/OrderMangProductDetailedVm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/626bdcf9-66cd-4501-b0fa-561305b6779b.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/_2023_2_22_13_20____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2023_2_22_13_20____.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/dev_doc.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/common/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/config/swagger/SwaggerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/config/swagger/WebMvcConfigurer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/test/model/balance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/test/repository/balancerepostiory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/test/repository/xml/balancerepostiory.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/controller/customerBankController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/model/customer_bank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/model/vto/customer_bank_vto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/repository/customerBankRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/repository/xml/customerBankRepository.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/service/customerBankService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/service/impl/customerBankServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,11 +61,6 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
@@ -89,7 +73,6 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showScratchesAndConsoles" value="false" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -104,15 +87,16 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/Administrator/Desktop/2023-02/temp/guoran",
+    "last_opened_file_path": "D:/java资料/guoran/src/main/java/com/guoran/server/common",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.41379312",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "5c9eb03264c7f68756a208edbb324505",
+    "spring.configuration.checksum": "1857410ef35dd1b6758a8b20d8ad531e",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -123,6 +107,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java资料\guoran\src\main\java\com\guoran\server\common" />
+      <recent name="D:\java资料\guoran\src\main\java\com\guoran\server" />
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran\guoran-server\guoran-server\src\main\java\com\guoran\server\wei_customer" />
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran\.idea" />
@@ -224,6 +210,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="guoran-server (1)" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="guoran-server (1)" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GuoranServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="guoran-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.guoran.server.GuoranServerApplication" />
@@ -284,6 +283,8 @@
       <option name="presentableId" value="Default" />
       <updated>1677058438289</updated>
       <workItem from="1677058440000" duration="220000" />
+      <workItem from="1677068605169" duration="4000" />
+      <workItem from="1677068619391" duration="604000" />
     </task>
     <servers />
   </component>

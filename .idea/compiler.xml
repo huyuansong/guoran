@@ -7,13 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="guoran-server (2)" />
         <module name="guoran-server" />
-        <module name="guoran-server (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="guoran-application" target="1.8" />
+      <module name="guoran-server (1)" target="1.8" />
+      <module name="guoran-server (2)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
