@@ -4,10 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="添加了swagger_魏梦">
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="修正了魏梦的代码结构">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2023_2_22_13_20____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2023_2_22_13_20____.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/controller/customerBankController.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/controller/customerBankController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/dev_doc.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/HELP.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/common/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/config/swagger/SwaggerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/config/swagger/WebMvcConfigurer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/test/model/balance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/test/repository/balancerepostiory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/test/repository/xml/balancerepostiory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/controller/customerBankController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/model/customer_bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/model/vto/customer_bank_vto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/repository/customerBankRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/repository/xml/customerBankRepository.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/service/customerBankService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/service/impl/customerBankServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/pom.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +78,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectId" id="2M4mk8B7pXgiKdlV6o5EO5TO6EP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -68,8 +102,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/Wei/Desktop/期末项目/guoran/guoran-server/guoran-server/src/main/java/com/guoran/server/wei_customer",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/2023-02/temp/guoran",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -109,7 +144,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GuoranServerApplication (5)">
+  <component name="RunManager" selected="Spring Boot.GuoranServerApplication (1)">
     <configuration name="GuoranServerApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="guoran-server (1)" />
       <extension name="coverage">
@@ -242,6 +277,16 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1677058438289</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677058438289</updated>
+      <workItem from="1677058440000" duration="220000" />
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>

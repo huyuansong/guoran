@@ -2,3 +2,10 @@
 .git/
 # 过滤vscode隐藏文件
 .vscode/
+target/
+.idea/
+HELP.md
+mvnw
+mvnw.cmd
+
+
