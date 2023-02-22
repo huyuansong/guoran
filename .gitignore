@@ -1,7 +1,6 @@
-#
+# 过滤git隐藏文件
 .git/
-
+# 过滤idea隐藏文件
 .idea/
-
-
+# 过滤vscode隐藏文件
 .vscode/
