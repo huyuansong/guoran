@@ -8,7 +8,7 @@
 
 前端：Node.js@16
 
-后端: Java@8、Mysql@5.8、SpringBoot@2.2.1
+后端: Java@8、Mysql@5.8、SpringBoot@2.2.4
 
 运维: ngnix
 
@@ -65,6 +65,7 @@ npm run dev
 | 卜春辉 | 设备管理 | 0%  |
 | 何菲凡 | 生产管理 | 1%  |
 | 刘朋飞 | 财务管理 | 0%  |
+| 马亚鹏 | 零工信息 | 0%  |
 
 # 需求进度
 
