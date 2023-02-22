@@ -9,7 +9,8 @@ spring:
     username: root
     driver-class-name: com.mysql.jdbc.Driver
 mybatis:
-  mapper-locations: classpath*:com/guoran/server/wei_customer/repository/xml/*.xml
+#  mapper-locations: classpath:com/guoran/server/weicustomer/repository/xml/*.xml
+  mapper-locations: classpath*:com/guoran/server/**/repository/xml/*.xml
   type-aliases-package: com.guoran.server.**.model
 #  configuration:
 #    map-underscore-to-camel-case: true

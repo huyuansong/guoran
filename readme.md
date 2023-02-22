@@ -3,7 +3,8 @@
 # 项目介绍
 
 这是一个企业管理项目
-
+开发文档直达连接
+[dev_doc.md](guoran-server%2Fdev_doc.md)
 
 # 后端项目结构
 ```java

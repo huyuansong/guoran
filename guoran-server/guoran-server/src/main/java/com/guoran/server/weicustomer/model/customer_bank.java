@@ -1,4 +1,4 @@
-package com.guoran.server.wei_customer.model;
+package com.guoran.server.weicustomer.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
