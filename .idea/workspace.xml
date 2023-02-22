@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="简化了项目结构_魏梦">
-      <change afterPath="$PROJECT_DIR$/guoran-server/dev_doc.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/repository/customerBankRepository.java" afterDir="false" />
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="修复了描述bug_魏梦">
+      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/controller/customerBankController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/model/vto/customer_bank_vto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/service/customerBankService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/service/impl/customerBankServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/GuoranServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/wei_customer/model/customer_bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/model/customer_bank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/wei_customer/repository/balancerepostiory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/wei_customer/repository/xml/balancerepostiory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/weicustomer/repository/xml/customerBankRepository.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/config/swagger/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/guoran-server/guoran-server/src/main/java/com/guoran/server/config/swagger/SwaggerConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
         <option value="markdown" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,6 +66,10 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -100,6 +102,8 @@
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.guoran.server.weicustomer.service.impl" />
+      <recent name="com.guoran.server.weicustomer.service" />
       <recent name="com.guoran.server.config.swagger" />
     </key>
   </component>
@@ -110,7 +114,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GuoranServerApplicationTests.contextLoads (2)">
+  <component name="RunManager" selected="Spring Boot.GuoranServerApplication (5)">
     <configuration name="GuoranServerApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="guoran-server (1)" />
       <extension name="coverage">
@@ -280,7 +284,9 @@
     <MESSAGE value="通过基础测试可以进行查询操作_魏梦" />
     <MESSAGE value="实例代码_魏梦" />
     <MESSAGE value="简化了项目结构_魏梦" />
-    <option name="LAST_COMMIT_MESSAGE" value="简化了项目结构_魏梦" />
+    <MESSAGE value="优化了代码可以进行正常开发了，加入了开发文档dev_doc.md_魏梦" />
+    <MESSAGE value="修复了描述bug_魏梦" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复了描述bug_魏梦" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

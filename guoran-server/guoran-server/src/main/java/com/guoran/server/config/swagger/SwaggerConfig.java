@@ -1,5 +1,6 @@
 package com.guoran.server.config.swagger;
 
+import io.swagger.annotations.Api;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,33 +13,33 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-
 @Configuration
 @EnableSwagger2
-@ConditionalOnProperty (name = "swagger.enable",  havingValue = "true")
 public class SwaggerConfig {
 	@Bean
 	public Docket createRestApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
-				.groupName("wei")
 				.apiInfo(apiInfo())
+				//是否开启 (true 开启  false隐藏。生产环境建议隐藏)
+				.enable(true)
 				.select()
-				// 为当前包路径
+				//扫描的路径包,设置basePackage会将包下的所有被@Api标记类的所有方法作为api
 				.apis(RequestHandlerSelectors.basePackage("com.guoran.server"))
+				//指定路径处理PathSelectors.any()代表所有的路径
 				.paths(PathSelectors.any())
 				.build();
 	}
-	// 构建 api文档的详细信息函数,注意这里的注解引用的是哪个
+
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder()
-				// 页面标题
-				.title("接口文档")
-				// 创建人信息
-				.contact(new Contact("",null,""))
-				// 版本号
-				.version("1.0")
-				// 描述
-				.description("API 描述")
+				//设置文档标题(API名称)
+				.title("果然风情项目API管理")
+				//文档描述
+				.description("接口说明")
+				//服务条款URL
+				.termsOfServiceUrl("http://localhost:8080/")
+				//版本号
+				.version("1.0.0")
 				.build();
 	}
 }
