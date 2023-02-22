@@ -2,11 +2,12 @@ package com.guoran.server.shensales.repository;
 
 import com.github.pagehelper.Page;
 import com.guoran.server.shensales.vmodel.OrderManagementSalesOrderVM;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
-import org.springframework.stereotype.Repository;
 
-@Repository
+
+@Mapper
 public interface OrderManagementSalesOrderRepository {
     /**
      * 分页查询

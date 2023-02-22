@@ -2,6 +2,10 @@ package com.guoran.server.shensales.resouce;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.pagehelper.Page;
+import com.guoran.server.common.Result;
+import com.guoran.server.common.exception.ImErrorCode;
+import com.guoran.server.common.exception.ServiceException;
+import com.guoran.server.common.i18n.MessageUtils;
 import com.guoran.server.common.search.PageQuery;
 import com.guoran.server.common.search.PageResult;
 import com.guoran.server.shensales.service.OrderManagementSalesOrderService;
@@ -30,9 +34,27 @@ public class OrderManagementSalesOrderResource {
     @ApiOperation(value = "查询分页数据")
     @RequestMapping(value = "/page",method = RequestMethod.POST)
     public String getEntryByPage(@RequestBody PageQuery pageQuery, OrderManagementSalesOrderVM orderManagementSalesOrderVM, String status){
-        Page<OrderManagementSalesOrderVM> pages = orderManagementSalesOrderService.findEntrysByPage(pageQuery, orderManagementSalesOrderVM, status);
-        PageResult pageResult=new PageResult();
+        String result = null;
 
-        return "";
+        System.out.println("aaaaddddddddf");
+        try {
+            Page<OrderManagementSalesOrderVM> pages = orderManagementSalesOrderService.findEntrysByPage(pageQuery, orderManagementSalesOrderVM, status);
+
+            PageResult pageResult = new PageResult();
+            pageResult.setPageNum(pageQuery.getPageNum());
+            pageResult.setRows(pages);
+            pageResult.setTotal(pageResult.getTotal());
+            pageResult.setPages(pageResult.getPages());
+            result = Result.success(ImErrorCode.MSG_SUCCESS,MessageUtils.get(ImErrorCode.MSG_SUCCESS),pageResult);
+            System.out.println(result);
+
+        } catch (ServiceException serviceException){
+            throw serviceException;
+        } catch (Exception e){
+            ServiceException se = new ServiceException(ImErrorCode.MSG_FAIL,MessageUtils.get(ImErrorCode.MSG_FAIL));
+            throw se;
+        }
+
+        return result;
     }
 }

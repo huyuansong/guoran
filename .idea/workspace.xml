@@ -4,30 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="初始化后台中">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/BaseOfConcurrencySafeEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/DynamicSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/FileterOperatorEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/FilterGroup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/FilterRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/PageQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/PlanningReportQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/model/OrderManagementSalesOrderEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/repository/OrderManagementSalesOrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/resouce/OrderManagementSalesOrderResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/OrderManagementSalesOrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/impl/OrderManagementSalesOrderServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/vmodel/ManagementSalesDetailsVM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/vmodel/OrderManagementSalesOrderVM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/vmodel/OrderMangProductDetailedVm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/626bdcf9-66cd-4501-b0fa-561305b6779b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2023_2_22_13_20____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2023_2_22_13_20____.xml" afterDir="false" />
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="销售管理分页查询更新">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/CharsetKit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Convert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Excel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Excels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/utils/StrFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/utils/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/GuoranServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/exception/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/DynamicSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/DynamicSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/repository/OrderManagementSalesOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/repository/OrderManagementSalesOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/resouce/OrderManagementSalesOrderResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/resouce/OrderManagementSalesOrderResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/OrderManagementSalesOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/OrderManagementSalesOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/impl/OrderManagementSalesOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/impl/OrderManagementSalesOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,11 +87,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.41379312",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "1857410ef35dd1b6758a8b20d8ad531e",
+    "spring.configuration.checksum": "558b473c92a5e77b165de56544c604c5",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -108,16 +103,17 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\java资料\guoran\src\main\java\com\guoran\server\common" />
+      <recent name="D:\java资料\guoran\src\main\java\com\guoran\server\common\poi\annotation\Convert" />
       <recent name="D:\java资料\guoran\src\main\java\com\guoran\server" />
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran\guoran-server\guoran-server\src\main\java\com\guoran\server\wei_customer" />
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
-      <recent name="C:\Users\Wei\Desktop\期末项目\guoran\.idea" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran\guoran-server\src\main\java\com\guoran\server\test\repository\xml" />
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.guoran.server.common.utils" />
       <recent name="com.guoran.server.weicustomer.service.impl" />
       <recent name="com.guoran.server.weicustomer.service" />
       <recent name="com.guoran.server.config.swagger" />
@@ -276,6 +272,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="showInfrastructureBeans" value="false" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <created>1677058438289</created>
@@ -284,8 +283,17 @@
       <updated>1677058438289</updated>
       <workItem from="1677058440000" duration="220000" />
       <workItem from="1677068605169" duration="4000" />
-      <workItem from="1677068619391" duration="604000" />
+      <workItem from="1677068619391" duration="4804000" />
+      <workItem from="1677073716303" duration="2470000" />
     </task>
+    <task id="LOCAL-00001" summary="销售管理分页查询更新">
+      <created>1677069457849</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1677069457849</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +336,8 @@
     <MESSAGE value="优化了代码可以进行正常开发了，加入了开发文档dev_doc.md_魏梦" />
     <MESSAGE value="修复了描述bug_魏梦" />
     <MESSAGE value="添加了swagger_魏梦" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了swagger_魏梦" />
+    <MESSAGE value="销售管理分页查询更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="销售管理分页查询更新" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

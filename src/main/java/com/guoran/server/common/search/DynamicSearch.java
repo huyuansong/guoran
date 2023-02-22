@@ -1,6 +1,7 @@
 package com.guoran.server.common.search;
 
-import com.hisoft.pam.im.common.utils.StringUtils;
+
+import com.guoran.server.common.utils.StringUtils;
 
 import java.util.List;
 
