@@ -15,6 +15,5 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GuoranServerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(GuoranServerApplication.class, args);
-
 	}
 }
