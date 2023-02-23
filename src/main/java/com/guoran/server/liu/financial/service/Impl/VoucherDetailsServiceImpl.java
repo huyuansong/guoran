@@ -11,9 +11,9 @@ import com.guoran.server.liu.financial.repository.VoucherDetailsRepository;
 import com.guoran.server.liu.financial.service.VoucherDetailsService;
 import com.guoran.server.liu.financial.vmodel.VoucherDetailsVM;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -29,9 +29,9 @@ import java.util.List;
  */
 @Service
 public class VoucherDetailsServiceImpl implements VoucherDetailsService {
-    @Autowired
-    JwtUserUtil jwtUserUtil;
-    @Autowired
+    /*  @Autowired
+      JwtUserUtil jwtUserUtil;*/
+    @Resource
     VoucherDetailsRepository voucherDetailsRepository;
 
     /**
@@ -58,7 +58,7 @@ public class VoucherDetailsServiceImpl implements VoucherDetailsService {
     public String createEntry(VoucherDetailsVM voucherDetailsVM) {
         VoucherDetailsEntity voucherDetailsEntity = new VoucherDetailsEntity();
         BeanUtils.copyProperties(voucherDetailsVM, voucherDetailsEntity);
-        voucherDetailsEntity.setCreateBy(jwtUserUtil.getUserName());
+        /*voucherDetailsEntity.setCreateBy(jwtUserUtil.getUserName());*/
         voucherDetailsEntity.setCreateTime(new Date());
         voucherDetailsRepository.insert(voucherDetailsEntity);
         return null;
@@ -75,7 +75,7 @@ public class VoucherDetailsServiceImpl implements VoucherDetailsService {
         VoucherDetailsEntity voucherDetailsEntity = voucherDetailsRepository.findById(voucherDetailsVM.getId());
         voucherDetailsEntity.failWhenConcurrencyViolation(voucherDetailsVM.getConcurrencyVersion());
         BeanUtils.copyProperties(voucherDetailsVM, voucherDetailsEntity);
-        voucherDetailsEntity.setUpdateBy(jwtUserUtil.getUserName());
+        /* voucherDetailsEntity.setUpdateBy(jwtUserUtil.getUserName());*/
         voucherDetailsEntity.setUpdateTime(new Date());
         voucherDetailsRepository.update(voucherDetailsEntity);
         return null;
@@ -119,7 +119,7 @@ public class VoucherDetailsServiceImpl implements VoucherDetailsService {
         for (VoucherDetailsVM detailsVM : voucherDetailsVMS) {
             VoucherDetailsEntity voucherDetailsEntity = new VoucherDetailsEntity();
             BeanUtils.copyProperties(detailsVM, voucherDetailsEntity);
-            voucherDetailsEntity.setCreateBy(jwtUserUtil.getUserName());
+            /* voucherDetailsEntity.setCreateBy(jwtUserUtil.getUserName());*/
             voucherDetailsEntity.setCreateTime(new Date());
             voucherDetailsEntities.add(voucherDetailsEntity);
         }
@@ -187,7 +187,7 @@ public class VoucherDetailsServiceImpl implements VoucherDetailsService {
         for (VoucherDetailsVM voucherDetailsVM : voucherDetailsVMS) {
             VoucherDetailsEntity voucherDetailsEntity = new VoucherDetailsEntity();
             BeanUtils.copyProperties(voucherDetailsVM, voucherDetailsEntity);
-            voucherDetailsEntity.setCreateBy(jwtUserUtil.getUserName());
+            /* voucherDetailsEntity.setCreateBy(jwtUserUtil.getUserName());*/
             voucherDetailsEntity.setCreateTime(new Date());
             voucherDetailsEntityList.add(voucherDetailsEntity);
         }
