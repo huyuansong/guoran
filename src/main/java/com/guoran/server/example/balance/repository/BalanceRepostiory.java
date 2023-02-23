@@ -1,7 +1,7 @@
-package com.guoran.server.test.repository;
+package com.guoran.server.example.balance.repository;
 
 
-import com.guoran.server.test.model.Balance;
+import com.guoran.server.example.balance.model.Balance;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
