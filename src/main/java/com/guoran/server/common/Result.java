@@ -30,10 +30,8 @@ public class Result {
 		return JSON.toJSONStringWithDateFormat(new Result(code, message, data, true), "yyyy-MM-dd HH:mm:ss", SerializerFeature.DisableCircularReferenceDetect, SerializerFeature.WriteNullStringAsEmpty);
 
     }
-
     /**
      * 失败的结果
-     *
      * @return
      */
     public static String failed() {
@@ -42,7 +40,6 @@ public class Result {
 
     /**
      * 自定义消息的失败结果
-     *
      * @param msg
      * @return
      */
@@ -52,7 +49,6 @@ public class Result {
 
     /**
      * 自定义消息编号的失败结果
-     *
      * @param code
      * @param msg
      * @return
@@ -60,4 +56,6 @@ public class Result {
     public static String failed(String code, String msg) {
         return JSON.toJSONString(new Result(code, msg, null, false));
     }
+
+
 }
