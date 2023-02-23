@@ -1,6 +1,5 @@
 package com.guoran.server.lsf.Warehouse.model;
 
-
 import com.guoran.server.common.BaseOfConcurrencySafeEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -25,7 +24,7 @@ public class StockReportEntity extends BaseOfConcurrencySafeEntity {
      * 仓库编码:Ck+4位序号；
      */
     private String warehouseCode;
-    /**
+   /**
      * 仓库名称
      */
     private String warehouseName;

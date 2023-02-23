@@ -1,6 +1,5 @@
 package com.guoran.server.lsf.Warehouse.model;
 
-
 import com.guoran.server.common.BaseOfConcurrencySafeEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -32,7 +31,7 @@ public class ProductAllocationEntity extends BaseOfConcurrencySafeEntity {
      */
     private String outwarehouseName;
     /**
-     * 商品编码：SPBM+6位序号;
+     * 商品编码：SPBM+6位序号
      */
     private String productCode;
     /**
@@ -42,7 +41,7 @@ public class ProductAllocationEntity extends BaseOfConcurrencySafeEntity {
     /**
      * 商品类型
      */
-    private String productType;
+    private Integer productType;
     /**
      * 商品批次号
      */
@@ -68,7 +67,7 @@ public class ProductAllocationEntity extends BaseOfConcurrencySafeEntity {
      */
     private Integer maximumQuantity;
     /**
-     * 调入仓库编码；Ck+4位序号
+     * 调入仓库编码：CK+4位序号
      */
     private String inwarehouseCode;
     /**
@@ -82,11 +81,11 @@ public class ProductAllocationEntity extends BaseOfConcurrencySafeEntity {
     /**
      * 调拨时间
      */
-    private Data allocationTime;
+    private Date allocationTime;
     /**
      * 审核状态
      */
-    private Integer audiStatus;
+    private Integer auditStatus;
     /**
      * 审核人
      */
@@ -95,8 +94,7 @@ public class ProductAllocationEntity extends BaseOfConcurrencySafeEntity {
      * 审核时间
      */
 
-
-    private Data auditTime;
+    private Date auditTime;
     /**
      * 驳回原因
      */
@@ -133,4 +131,6 @@ public class ProductAllocationEntity extends BaseOfConcurrencySafeEntity {
      * 调拨批次号
      */
     private String assignBatchNumber;
+
+
 }

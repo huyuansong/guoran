@@ -23,7 +23,7 @@ import java.math.BigDecimal;
 public class OpeningInventoryEntity extends BaseOfConcurrencySafeEntity {
   private Long id;
   /**
-   * 仓库编号:CK+4位序号
+   * 仓库编码：CK+4位序号
    */
   private String warehouseCode;
   /**
@@ -31,9 +31,9 @@ public class OpeningInventoryEntity extends BaseOfConcurrencySafeEntity {
    */
   private String warehouseName;
   /**
-   * 商品编码:SPBM+6位序号；
+   * 商品编码：SPBM+6位序号
    */
-  private String productCOde;
+  private String productCode;
   /**
    * 商品编码名称
    */
@@ -57,7 +57,7 @@ public class OpeningInventoryEntity extends BaseOfConcurrencySafeEntity {
   /**
    * 期初库存
    */
-  private BigDecimal openingInventorty;
+  private BigDecimal openingInventory;
   /**
    * 实时库存
    */
