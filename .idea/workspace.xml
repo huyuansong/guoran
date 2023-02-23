@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="销售管理分页查询更新">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/CharsetKit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Convert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Excel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Excels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/utils/StrFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/utils/StringUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="修正了魏梦的代码结构">
+      <change afterPath="$PROJECT_DIR$/dev_doc.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/GuoranServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/DynamicSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/DynamicSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/repository/OrderManagementSalesOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/repository/OrderManagementSalesOrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/resouce/OrderManagementSalesOrderResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/resouce/OrderManagementSalesOrderResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/OrderManagementSalesOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/OrderManagementSalesOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/impl/OrderManagementSalesOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/impl/OrderManagementSalesOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/weicustomer/controller/customerBankController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/weicustomer/model/customer_bank.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/weicustomer/model/vto/customer_bank_vto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/weicustomer/repository/customerBankRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/weicustomer/repository/xml/customerBankRepository.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/weicustomer/service/customerBankService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/weicustomer/service/impl/customerBankServiceImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +29,22 @@
       <list>
         <option value="Interface" />
         <option value="markdown" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JavaAutoRunManager">
@@ -56,9 +62,20 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2M4mk8B7pXgiKdlV6o5EO5TO6EP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -68,11 +85,13 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -81,16 +100,17 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "code.cleanup.on.save": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/java资料/guoran/src/main/java/com/guoran/server/common",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/2023-02/temp/guoran",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.41379312",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save",
     "spring.configuration.checksum": "558b473c92a5e77b165de56544c604c5",
     "vue.rearranger.settings.migration": "true"
   },
@@ -102,18 +122,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java资料\guoran\src\main\java\com\guoran\server\common" />
-      <recent name="D:\java资料\guoran\src\main\java\com\guoran\server\common\poi\annotation\Convert" />
-      <recent name="D:\java资料\guoran\src\main\java\com\guoran\server" />
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran\guoran-server\guoran-server\src\main\java\com\guoran\server\wei_customer" />
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
+      <recent name="C:\Users\Wei\Desktop\期末项目\guoran\.idea" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran\guoran-server\src\main\java\com\guoran\server\test\repository\xml" />
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.guoran.server.common.utils" />
       <recent name="com.guoran.server.weicustomer.service.impl" />
       <recent name="com.guoran.server.weicustomer.service" />
       <recent name="com.guoran.server.config.swagger" />
@@ -126,7 +143,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GuoranServerApplication (1)">
+  <component name="RunManager" selected="JUnit.GuoranServerApplicationTests.contextLoads2 (1)">
     <configuration name="GuoranServerApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="guoran-server (1)" />
       <extension name="coverage">
@@ -138,22 +155,6 @@
       <option name="PACKAGE_NAME" value="com.guoran.server" />
       <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GuoranServerApplicationTests.contextLoads (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guoran-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.guoran.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.guoran.server" />
-      <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -190,8 +191,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GuoranServerApplicationTests.contextLoads2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guoran-server (1)" />
+    <configuration name="GuoranServerApplicationTests.contextLoads2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guoran-server" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.guoran.server.*" />
@@ -206,15 +207,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration name="GuoranServerApplicationTests.contextLoads2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="guoran-server (1)" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="guoran-server (1)" />
-      <option name="filePath" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.guoran.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.guoran.server" />
+      <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -263,18 +267,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads2 (1)" />
+        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads" />
         <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads (2)" />
         <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads2" />
         <item itemvalue="JUnit.GuoranServerApplicationTests" />
-        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads (1)" />
-        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
-  <component name="SpringBeansView">
-    <option name="showInfrastructureBeans" value="false" />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <created>1677058438289</created>
@@ -282,18 +283,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677058438289</updated>
       <workItem from="1677058440000" duration="220000" />
-      <workItem from="1677068605169" duration="4000" />
-      <workItem from="1677068619391" duration="4804000" />
-      <workItem from="1677073716303" duration="2470000" />
     </task>
-    <task id="LOCAL-00001" summary="销售管理分页查询更新">
-      <created>1677069457849</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1677069457849</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,8 +326,8 @@
     <MESSAGE value="优化了代码可以进行正常开发了，加入了开发文档dev_doc.md_魏梦" />
     <MESSAGE value="修复了描述bug_魏梦" />
     <MESSAGE value="添加了swagger_魏梦" />
-    <MESSAGE value="销售管理分页查询更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="销售管理分页查询更新" />
+    <MESSAGE value="修正了魏梦的代码结构" />
+    <option name="LAST_COMMIT_MESSAGE" value="修正了魏梦的代码结构" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
