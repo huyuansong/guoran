@@ -1,4 +1,4 @@
-package com.guoran.server.shensales.resouce;
+package com.guoran.server.shen.sales.resouce;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.pagehelper.Page;
@@ -8,8 +8,8 @@ import com.guoran.server.common.exception.ServiceException;
 import com.guoran.server.common.i18n.MessageUtils;
 import com.guoran.server.common.search.PageQuery;
 import com.guoran.server.common.search.PageResult;
-import com.guoran.server.shensales.service.OrderManagementSalesOrderService;
-import com.guoran.server.shensales.vmodel.OrderManagementSalesOrderVM;
+import com.guoran.server.shen.sales.service.OrderManagementSalesOrderService;
+import com.guoran.server.shen.sales.vmodel.OrderManagementSalesOrderVM;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -4,24 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="销售管理分页查询更新">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/CharsetKit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Convert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Excel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Excels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/utils/StrFormatter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/utils/StringUtils.java" afterDir="false" />
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="更新销售管理分页查询">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/GuoranServerApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/exception/GlobalExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/DynamicSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/DynamicSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/repository/OrderManagementSalesOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/repository/OrderManagementSalesOrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/resouce/OrderManagementSalesOrderResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/resouce/OrderManagementSalesOrderResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/OrderManagementSalesOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/OrderManagementSalesOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/impl/OrderManagementSalesOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/impl/OrderManagementSalesOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/model/OrderManagementSalesOrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/model/OrderManagementSalesOrderEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/repository/OrderManagementSalesOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/repository/OrderManagementSalesOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/resouce/OrderManagementSalesOrderResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/resouce/OrderManagementSalesOrderResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/OrderManagementSalesOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/service/OrderManagementSalesOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/service/impl/OrderManagementSalesOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/service/impl/OrderManagementSalesOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/vmodel/ManagementSalesDetailsVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/vmodel/ManagementSalesDetailsVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/vmodel/OrderManagementSalesOrderVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/vmodel/OrderManagementSalesOrderVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shensales/vmodel/OrderMangProductDetailedVm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/vmodel/OrderMangProductDetailedVm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,37 +64,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/java资料/guoran/src/main/java/com/guoran/server/common",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.41379312",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "558b473c92a5e77b165de56544c604c5",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/java资料/guoran/src/main/java/com/guoran/server/common&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.41379312&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;558b473c92a5e77b165de56544c604c5&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\java资料\guoran\src\main\java\com\guoran\server\common" />
@@ -284,7 +279,7 @@
       <workItem from="1677058440000" duration="220000" />
       <workItem from="1677068605169" duration="4000" />
       <workItem from="1677068619391" duration="4804000" />
-      <workItem from="1677073716303" duration="2470000" />
+      <workItem from="1677073716303" duration="8721000" />
     </task>
     <task id="LOCAL-00001" summary="销售管理分页查询更新">
       <created>1677069457849</created>
@@ -293,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677069457849</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="更新销售管理分页查询">
+      <created>1677076427624</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677076427624</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +339,8 @@
     <MESSAGE value="修复了描述bug_魏梦" />
     <MESSAGE value="添加了swagger_魏梦" />
     <MESSAGE value="销售管理分页查询更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="销售管理分页查询更新" />
+    <MESSAGE value="更新销售管理分页查询" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新销售管理分页查询" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

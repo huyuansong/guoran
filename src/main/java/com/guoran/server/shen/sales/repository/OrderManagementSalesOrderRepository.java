@@ -1,7 +1,7 @@
-package com.guoran.server.shensales.repository;
+package com.guoran.server.shen.sales.repository;
 
 import com.github.pagehelper.Page;
-import com.guoran.server.shensales.vmodel.OrderManagementSalesOrderVM;
+import com.guoran.server.shen.sales.vmodel.OrderManagementSalesOrderVM;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;

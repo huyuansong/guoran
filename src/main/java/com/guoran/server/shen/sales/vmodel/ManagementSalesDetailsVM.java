@@ -1,4 +1,4 @@
-package com.guoran.server.shensales.vmodel;
+package com.guoran.server.shen.sales.vmodel;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModelProperty;
