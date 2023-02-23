@@ -8,13 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="修改了描述和开发文档">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/_2023_2_22_13_20____.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/_2023_2_22_13_20____.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_doc.md" beforeDir="false" afterPath="$PROJECT_DIR$/dev_doc.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/GuoranServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/resouce/OrderManagementSalesOrderResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/resouce/OrderManagementSalesOrderResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/service/impl/OrderManagementSalesOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/service/impl/OrderManagementSalesOrderServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +60,6 @@
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
@@ -87,7 +78,6 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showScratchesAndConsoles" value="false" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -106,7 +96,9 @@
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_opened_file_path": "C:/Users/Administrator/Desktop/2023-02/temp/guoran",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
@@ -256,6 +248,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677058438289</updated>
       <workItem from="1677058440000" duration="220000" />
+      <workItem from="1677123893046" duration="902000" />
     </task>
     <servers />
   </component>
