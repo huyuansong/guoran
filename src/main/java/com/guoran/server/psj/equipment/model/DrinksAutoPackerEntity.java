@@ -19,7 +19,7 @@ public class DrinksAutoPackerEntity extends BaseOfConcurrencySafeEntity {
      */
     private String departId;
     /**
-     * 部门名称1
+     * 部门名称
      */
     private String departName;
     /**
