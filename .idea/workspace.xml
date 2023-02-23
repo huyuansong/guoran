@@ -7,10 +7,67 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="修改了描述和开发文档">
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="修改了玄学问题">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/626bdcf9-66cd-4501-b0fa-561305b6779b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/626bdcf9-66cd-4501-b0fa-561305b6779b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/626bdcf9-66cd-4501-b0fa-561305b6779b/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/626bdcf9-66cd-4501-b0fa-561305b6779b/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/626bdcf9-66cd-4501-b0fa-561305b6779b/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/626bdcf9-66cd-4501-b0fa-561305b6779b/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/626bdcf9-66cd-4501-b0fa-561305b6779b/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/626bdcf9-66cd-4501-b0fa-561305b6779b/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/guoran.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/guoran.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/markdown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_2_22_13_20_取消提交了变更_[变更]/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_2023_2_22_13_20_取消提交了变更_[变更]/shelved.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_doc.md" beforeDir="false" afterPath="$PROJECT_DIR$/dev_doc.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/GuoranServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/BaseOfConcurrencySafeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/BaseOfConcurrencySafeEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/em/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/em/ResultCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/exception/ImErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/exception/ImErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/exception/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/exception/ServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/file/model/OSSFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/file/model/OSSFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/i18n/MessageUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/i18n/MessageUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/i18n/MyLocaleResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/i18n/MyLocaleResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/CharsetKit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/CharsetKit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Convert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Convert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Excel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Excel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Excels.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/poi/annotation/Excels.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/DynamicSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/DynamicSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/FileterOperatorEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/FileterOperatorEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/FilterGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/FilterGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/FilterRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/FilterRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/PageQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/PageQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/PageResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/PlanningReportQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/search/PlanningReportQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/utils/StrFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/utils/StrFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/utils/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/utils/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/config/swagger/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/config/swagger/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/config/swagger/WebMvcConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/config/swagger/WebMvcConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/psj/equipment/model/DrinksAutoPackerEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/psj/equipment/model/DrinksAutoPackerEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/psj/equipment/model/vto/DrinksAutoPackerVM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/model/OrderManagementSalesOrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/model/OrderManagementSalesOrderEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/repository/OrderManagementSalesOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/repository/OrderManagementSalesOrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/resouce/OrderManagementSalesOrderResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/resouce/OrderManagementSalesOrderResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/service/OrderManagementSalesOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/service/OrderManagementSalesOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/service/impl/OrderManagementSalesOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/service/impl/OrderManagementSalesOrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/vmodel/ManagementSalesDetailsVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/vmodel/ManagementSalesDetailsVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/vmodel/OrderManagementSalesOrderVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/vmodel/OrderManagementSalesOrderVM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/vmodel/OrderMangProductDetailedVm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/vmodel/OrderMangProductDetailedVm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/test/model/Balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/ example/balance/model/Balance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/test/repository/BalanceRepostiory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/ example/balance/repository/BalanceRepostiory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/test/repository/xml/BalanceRepostiory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/ example/balance/repository/xml/BalanceRepostiory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/guoran/server/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/guoran/server/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +80,8 @@
         <option value="Interface" />
         <option value="markdown" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,13 +103,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="JUnit" name="GuoranServerApplicationTests.contextLoads (2)" />
-    </enabled-run-configurations>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
@@ -65,32 +124,65 @@
   </component>
   <component name="ProjectId" id="2M4mk8B7pXgiKdlV6o5EO5TO6EP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="false" id="更新" />
-    <ConfirmationsSetting value="2" id="新增" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "code.cleanup.on.save": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "C:/Users/Wei/Desktop/期末项目/guoran",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.41379312",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "558b473c92a5e77b165de56544c604c5",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Wei\Desktop\期末项目\guoran\guoran-server\guoran-server\src\main\java\com\guoran\server\wei_customer" />
+      <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
+      <recent name="C:\Users\Wei\Desktop\期末项目\guoran\.idea" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran\guoran-server\src\main\java\com\guoran\server\test\repository\xml" />
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.guoran.server" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.guoran.server.weicustomer.service.impl" />
       <recent name="com.guoran.server.weicustomer.service" />
       <recent name="com.guoran.server.config.swagger" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Wei\Desktop\期末项目\guoran\guoran-server\guoran-server\src\main\java\com\guoran\server\wei_customer" />
-      <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
-      <recent name="C:\Users\Wei\Desktop\期末项目\guoran\.idea" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -100,9 +192,9 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GuoranServerApplication (1)">
-    <configuration name="GuoranServerApplicationTests.contextLoads (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guoran-server (1)" />
+  <component name="RunManager" selected="JUnit.UserTest">
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guoran-server" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.guoran.server.*" />
@@ -110,14 +202,39 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.guoran.server" />
-      <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
+      <option name="MAIN_CLASS_NAME" value="com.guoran.server.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.contex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guoran-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.guoran.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.guoran.server" />
+      <option name="MAIN_CLASS_NAME" value="com.guoran.server.UserTest" />
+      <option name="METHOD_NAME" value="contex" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guoran-server" />
+      <option name="PACKAGE_NAME" value="com.guoran.server" />
+      <option name="MAIN_CLASS_NAME" value="com.guoran.server.UserTest" />
       <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GuoranServerApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="guoran-server" />
       <extension name="coverage">
         <pattern>
@@ -126,53 +243,31 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.guoran.server" />
-      <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
+      <option name="MAIN_CLASS_NAME" value="com.guoran.server.UserTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="myTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guoran-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.guoran.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.guoran.server" />
+      <option name="MAIN_CLASS_NAME" value="com.guoran.server.myTest" />
       <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GuoranServerApplicationTests.contextLoads2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GuoranServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="guoran-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.guoran.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.guoran.server" />
-      <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GuoranServerApplicationTests.contextLoads2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guoran-server (1)" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.guoran.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.guoran.server" />
-      <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GuoranServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="guoran-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.guoran.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.guoran.server.GuoranServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -186,27 +281,25 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads" />
-      <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads (2)" />
-      <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads2" />
-      <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads2 (1)" />
-      <item itemvalue="Spring Boot.GuoranServerApplication" />
+      <item itemvalue="JUnit.UserTest" />
+      <item itemvalue="JUnit.UserTest.contex" />
+      <item itemvalue="JUnit.UserTest.contextLoads" />
+      <item itemvalue="JUnit.UserTest.test" />
+      <item itemvalue="JUnit.myTest.contextLoads" />
       <item itemvalue="Spring Boot.GuoranServerApplication (1)" />
+      <item itemvalue="Spring Boot.GuoranServerApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.GuoranServerApplication (1)" />
-        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads2 (1)" />
-        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads" />
-        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads (2)" />
-        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads2" />
+        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.UserTest.test" />
+        <item itemvalue="JUnit.UserTest.contex" />
+        <item itemvalue="JUnit.UserTest.contextLoads" />
+        <item itemvalue="JUnit.myTest.contextLoads" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="应用程序级" UseSingleDictionary="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <created>1677058438289</created>
@@ -214,6 +307,7 @@
       <option name="presentableId" value="Default" />
       <updated>1677058438289</updated>
       <workItem from="1677058440000" duration="220000" />
+      <workItem from="1677123893046" duration="902000" />
     </task>
     <servers />
   </component>
@@ -242,7 +336,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -260,7 +353,8 @@
     <MESSAGE value="添加了swagger_魏梦" />
     <MESSAGE value="修正了魏梦的代码结构" />
     <MESSAGE value="修改了描述和开发文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了描述和开发文档" />
+    <MESSAGE value="修改了玄学问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了玄学问题" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
