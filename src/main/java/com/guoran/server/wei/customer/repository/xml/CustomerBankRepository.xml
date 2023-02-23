@@ -3,6 +3,6 @@
 
 <mapper namespace="com.guoran.server.wei.customer.repository.CustomerBankRepository">
     <select id="findAll" resultType="CustomerBank">
-        select * from customer_bank
+        select * from customer_bank limit #{page} , #{size}
     </select>
 </mapper>

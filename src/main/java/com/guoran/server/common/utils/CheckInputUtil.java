@@ -1,9 +1,5 @@
 package com.guoran.server.common.utils;
 
-<<<<<<< HEAD
-=======
-
->>>>>>> bdc8dbf (修改了描述和开发文档)
 import com.guoran.server.common.search.FilterGroup;
 import com.guoran.server.common.search.FilterRule;
 import com.guoran.server.common.search.PageQuery;
