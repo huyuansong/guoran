@@ -2,7 +2,6 @@ package com.guoran.server.psj.equipment.model;
 
 import com.guoran.server.common.BaseOfConcurrencySafeEntity;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
@@ -11,7 +10,6 @@ import java.util.Date;
 /**
  * 设备管理-设备运行记录-饮料车间-自动包装机运行记录
  */
-@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class DrinksAutoPackerEntity extends BaseOfConcurrencySafeEntity {
@@ -21,7 +19,7 @@ public class DrinksAutoPackerEntity extends BaseOfConcurrencySafeEntity {
      */
     private String departId;
     /**
-     * 部门名称
+     * 部门名称1
      */
     private String departName;
     /**
