@@ -7,17 +7,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="修正了魏梦的代码结构">
-      <change afterPath="$PROJECT_DIR$/dev_doc.md" afterDir="false" />
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="修改了描述和开发文档">
+      <changelist_data name="魏梦" email="2751338876@qq.com" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/weicustomer/controller/customerBankController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/weicustomer/model/customer_bank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/weicustomer/model/vto/customer_bank_vto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/weicustomer/repository/customerBankRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/weicustomer/repository/xml/customerBankRepository.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/weicustomer/service/customerBankService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/weicustomer/service/impl/customerBankServiceImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +31,11 @@
     <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="魏梦 &lt;2751338876@qq.com&gt;" />
+      </list>
+    </option>
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--tags" />
@@ -327,7 +324,11 @@
     <MESSAGE value="修复了描述bug_魏梦" />
     <MESSAGE value="添加了swagger_魏梦" />
     <MESSAGE value="修正了魏梦的代码结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正了魏梦的代码结构" />
+    <MESSAGE value="修改了描述和开发文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了描述和开发文档" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
