@@ -7,10 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="修改了玄学问题">
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="修改了描述和开发文档">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/GuoranServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/guoran/server/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/guoran/server/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/common/Result.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +23,8 @@
         <option value="Interface" />
         <option value="markdown" />
         <option value="Enum" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -46,15 +46,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="GuoranServerApplicationTests.contextLoads (2)" />
+    </enabled-run-configurations>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
@@ -67,65 +65,32 @@
   </component>
   <component name="ProjectId" id="2M4mk8B7pXgiKdlV6o5EO5TO6EP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+    <OptionsSetting value="false" id="更新" />
+    <ConfirmationsSetting value="2" id="新增" />
   </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/2023-02/temp/guoran&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.41379312&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;558b473c92a5e77b165de56544c604c5&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
-    ]
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Wei\Desktop\期末项目\guoran\guoran-server\guoran-server\src\main\java\com\guoran\server\wei_customer" />
-      <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
-      <recent name="C:\Users\Wei\Desktop\期末项目\guoran\.idea" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran\guoran-server\src\main\java\com\guoran\server\test\repository\xml" />
       <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.guoran.server" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.guoran.server.weicustomer.service.impl" />
       <recent name="com.guoran.server.weicustomer.service" />
       <recent name="com.guoran.server.config.swagger" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Wei\Desktop\期末项目\guoran\guoran-server\guoran-server\src\main\java\com\guoran\server\wei_customer" />
+      <recent name="C:\Users\Wei\Desktop\期末项目\guoran" />
+      <recent name="C:\Users\Wei\Desktop\期末项目\guoran\.idea" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -135,7 +100,39 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.contex">
+  <component name="RunManager" selected="Spring Boot.GuoranServerApplication (1)">
+    <configuration name="GuoranServerApplicationTests.contextLoads (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guoran-server (1)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.guoran.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.guoran.server" />
+      <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuoranServerApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guoran-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.guoran.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.guoran.server" />
+      <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GuoranServerApplicationTests.contextLoads2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="guoran-server" />
       <extension name="coverage">
@@ -152,8 +149,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.contex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guoran-server" />
+    <configuration name="GuoranServerApplicationTests.contextLoads2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guoran-server (1)" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.guoran.server.*" />
@@ -161,24 +158,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.guoran.server" />
-      <option name="MAIN_CLASS_NAME" value="com.guoran.server.UserTest" />
-      <option name="METHOD_NAME" value="contex" />
+      <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guoran-server" />
-      <option name="PACKAGE_NAME" value="com.guoran.server" />
-      <option name="MAIN_CLASS_NAME" value="com.guoran.server.UserTest" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GuoranServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="guoran-server" />
       <extension name="coverage">
         <pattern>
@@ -186,26 +173,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.guoran.server" />
-      <option name="MAIN_CLASS_NAME" value="com.guoran.server.UserTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="myTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guoran-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.guoran.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.guoran.server" />
-      <option name="MAIN_CLASS_NAME" value="com.guoran.server.myTest" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.guoran.server.GuoranServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -218,24 +186,27 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserTest.contex" />
-      <item itemvalue="JUnit.UserTest.contextLoads" />
-      <item itemvalue="JUnit.UserTest.test" />
-      <item itemvalue="JUnit.myTest.contextLoads" />
+      <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads (2)" />
+      <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads2" />
       <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads2 (1)" />
       <item itemvalue="Spring Boot.GuoranServerApplication" />
+      <item itemvalue="Spring Boot.GuoranServerApplication (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserTest.contex" />
-        <item itemvalue="JUnit.UserTest.test" />
-        <item itemvalue="JUnit.UserTest.contextLoads" />
-        <item itemvalue="JUnit.myTest.contextLoads" />
+        <item itemvalue="Spring Boot.GuoranServerApplication (1)" />
         <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads2 (1)" />
+        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads (2)" />
+        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads2" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="应用程序级" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <created>1677058438289</created>
@@ -243,7 +214,6 @@
       <option name="presentableId" value="Default" />
       <updated>1677058438289</updated>
       <workItem from="1677058440000" duration="220000" />
-      <workItem from="1677123893046" duration="902000" />
     </task>
     <servers />
   </component>
@@ -272,6 +242,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -289,8 +260,7 @@
     <MESSAGE value="添加了swagger_魏梦" />
     <MESSAGE value="修正了魏梦的代码结构" />
     <MESSAGE value="修改了描述和开发文档" />
-    <MESSAGE value="修改了玄学问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了玄学问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了描述和开发文档" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
