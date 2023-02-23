@@ -22,6 +22,6 @@ public class UserTest {
 
 	@Test
 	void contex() {
-		System.out.println(customerBankService.findAll());
+		System.out.println(customerBankService.findAll("5", "1"));
 	}
 }

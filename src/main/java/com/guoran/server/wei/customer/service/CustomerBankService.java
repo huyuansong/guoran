@@ -13,5 +13,8 @@ public interface CustomerBankService {
 	 *
 	 * @return List<CustomerBank>
 	 */
-	List<CustomerBank> findAll();
+	List<CustomerBank> findAll(
+			String size,
+			String page
+	);
 }
