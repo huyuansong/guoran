@@ -17,9 +17,10 @@ public class CustomerBankServiceImpl implements CustomerBankService {
 
 	@Autowired
 	private CustomerBankRepository customerBankRepository;
+
 	@Override
-	public List<CustomerBank> findAll() {
-		return customerBankRepository.findAll();
+	public List<CustomerBank> findAll(String size, String page) {
+		return customerBankRepository.findAll(size, page);
 	}
 
 }

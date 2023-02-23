@@ -7,27 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="修改了描述和开发文档">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/guoran/server/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/example/balance/model/balance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/example/balance/repository/balancerepostiory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/example/balance/repository/xml/balancerepostiory.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/model/OrderManagementSalesOrderEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/repository/OrderManagementSalesOrderRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/resouce/OrderManagementSalesOrderResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/service/OrderManagementSalesOrderService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/service/impl/OrderManagementSalesOrderServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/vmodel/ManagementSalesDetailsVM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/vmodel/OrderManagementSalesOrderVM.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/shen/sales/vmodel/OrderMangProductDetailedVm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/test/model/balance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/test/model/Balance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/test/repository/balancerepostiory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/test/repository/BalanceRepostiory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/test/repository/xml/balancerepostiory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/test/repository/xml/BalanceRepostiory.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/guoran/server/GuoranServerApplicationTests.java" beforeDir="false" />
+    <list default="true" id="c860efd1-065a-42aa-a2d4-144bdf1387a4" name="变更" comment="回退了版本">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/guoran/server/GuoranServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/guoran/server/GuoranServerApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +42,7 @@
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
     <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -106,7 +88,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/Desktop/2023-02/temp/guoran&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Wei/Desktop/期末项目/guoran&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -152,8 +134,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserTest.contex">
-    <configuration name="GuoranServerApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserTest">
+    <configuration name="UserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="guoran-server" />
       <extension name="coverage">
         <pattern>
@@ -162,25 +144,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.guoran.server" />
-      <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GuoranServerApplicationTests.contextLoads2 (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guoran-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.guoran.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.guoran.server" />
-      <option name="MAIN_CLASS_NAME" value="com.guoran.server.GuoranServerApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads2" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.guoran.server.UserTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -211,6 +176,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="guoran-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.guoran.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.guoran.server" />
+      <option name="MAIN_CLASS_NAME" value="com.guoran.server.UserTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="myTest.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="guoran-server" />
       <extension name="coverage">
@@ -227,6 +208,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GuoranServerApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="guoran-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.guoran.server.GuoranServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GuoranServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="guoran-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.gr.guoranserver.GuoranServerApplication" />
@@ -235,20 +223,21 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.UserTest" />
       <item itemvalue="JUnit.UserTest.contex" />
       <item itemvalue="JUnit.UserTest.contextLoads" />
+      <item itemvalue="JUnit.UserTest.test" />
       <item itemvalue="JUnit.myTest.contextLoads" />
-      <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads" />
-      <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads2 (1)" />
+      <item itemvalue="Spring Boot.GuoranServerApplication (1)" />
       <item itemvalue="Spring Boot.GuoranServerApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserTest" />
+        <item itemvalue="JUnit.UserTest.test" />
         <item itemvalue="JUnit.UserTest.contex" />
         <item itemvalue="JUnit.UserTest.contextLoads" />
         <item itemvalue="JUnit.myTest.contextLoads" />
-        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads2 (1)" />
-        <item itemvalue="JUnit.GuoranServerApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
@@ -306,7 +295,9 @@
     <MESSAGE value="添加了swagger_魏梦" />
     <MESSAGE value="修正了魏梦的代码结构" />
     <MESSAGE value="修改了描述和开发文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改了描述和开发文档" />
+    <MESSAGE value="修改了玄学问题" />
+    <MESSAGE value="回退了版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="回退了版本" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

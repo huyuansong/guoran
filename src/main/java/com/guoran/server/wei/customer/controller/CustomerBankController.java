@@ -6,27 +6,30 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author Wei
  */
 @Api (tags = "客户管理-客户银行信息 ")
+@RequestMapping ("/customer")
 @RestController
 public class CustomerBankController {
 	@Autowired
 	private CustomerBankService customerBankService;
 
+	/**
+	 * @param size
+	 * @param page
+	 * @return Result
+	 */
 	@ApiOperation (value = "客户银行信息", notes = "获取客户银行信息")
-	@GetMapping ("/customer/bank")
-	public Result customerBankGet() {
-		return Result.success(customerBankService.findAll());
+	@GetMapping ("/bank/${size}/${page}")
+	public Result customerBankGet(@PathVariable String size, @PathVariable String page) {
+		return Result.success(customerBankService.findAll(size, page));
 	}
 
-	@ApiOperation (value = "test", notes = "test")
-	@GetMapping ("/customer/bank2")
-	public Result customerBankGet2() {
-		return Result.success("获取成功");
-	}
 
 }
