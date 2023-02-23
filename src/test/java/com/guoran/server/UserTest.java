@@ -1,5 +1,6 @@
 package com.guoran.server;
 
+import com.guoran.server.test.repository.BalanceRepostiory;
 import com.guoran.server.wei.customer.service.CustomerBankService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +12,16 @@ public class UserTest {
 	private CustomerBankService customerBankService;
 
 	@Autowired
-	private
+	private BalanceRepostiory balanceRepostiory;
+
 
 	@Test
-	public void contex() {
+	void test() {
+		System.out.println(balanceRepostiory.findAll());
+	}
+
+	@Test
+	void contex() {
 		System.out.println(customerBankService.findAll());
 	}
 }
