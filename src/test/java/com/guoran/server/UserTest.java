@@ -1,6 +1,6 @@
 package com.guoran.server;
 
-import com.guoran.server.test.repository.BalanceRepostiory;
+import com.guoran.server.example.balance.repository.BalanceRepostiory;
 import com.guoran.server.wei.customer.service.CustomerBankService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

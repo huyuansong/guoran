@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.guoran.server.test.repository.BalanceRepostiory">
+<mapper namespace="com.guoran.server.example.balance.repository.BalanceRepostiory">
     <select id="findAll" resultType="Balance">
         select * from customer_balance
     </select>
