@@ -13,6 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan ("com.guoran.server.*.*.repository")
 @SpringBootApplication
 public class GuoranServerApplication {
+	
 	public static void main(String[] args) {
 		SpringApplication.run(GuoranServerApplication.class, args);
 	}
