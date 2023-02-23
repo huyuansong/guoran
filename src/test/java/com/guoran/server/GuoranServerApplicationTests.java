@@ -5,23 +5,22 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+
 @SpringBootTest
 public class GuoranServerApplicationTests {
+    @Autowired
+    private balancerepostiory balancerePostiory;
+    @Autowired
+    private com.guoran.server.wei.customer.repository.CustomerBankRepository CustomerBankRepository;
 
-	@Autowired
-	private balancerepostiory balancerePostiory;
+    @Test
+    void contextLoads2() {
+        System.out.println(balancerePostiory.findAll());
+    }
 
-	@Test
-	void contextLoads2() {
-		System.out.println(balancerePostiory.findAll());
-	}
-
-
-	@Autowired
-	private com.guoran.server.wei.customer.repository.CustomerBankRepository CustomerBankRepository;
-	@Test
-	void contextLoads() {
-		System.out.println(CustomerBankRepository.findAll());
-	}
+    @Test
+    void contextLoads() {
+        System.out.println(CustomerBankRepository.findAll());
+    }
 
 }
