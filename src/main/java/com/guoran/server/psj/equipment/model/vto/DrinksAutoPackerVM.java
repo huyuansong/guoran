@@ -1,7 +1,5 @@
-package com.guoran.server.psj.equipment.model;
+package com.guoran.server.psj.equipment.model.vto;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.guoran.server.common.BaseOfConcurrencySafeEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,13 +8,14 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * 设备管理-设备运行记录-饮料车间-自动包装机运行记录
+ * <p>
+ * 设备管理-设备运行记录-饮料车间-自动包装机运行记录DTO
+ * </p>
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName(value = "drinks_auto_packer", excludeProperty = "concurrencyVersion")
-public class DrinksAutoPackerEntity extends BaseOfConcurrencySafeEntity {
+public class DrinksAutoPackerVM {
     private Long id;
     /**
      * 部门ID
@@ -79,4 +78,25 @@ public class DrinksAutoPackerEntity extends BaseOfConcurrencySafeEntity {
      */
     private String remark;
 
+    /*
+     * 并发版本号
+     * */
+    private Integer concurrencyVersion;
+    /**
+     * 创建人
+     */
+    private String createBy;
+    /**
+     * 创建时间
+     */
+    private Date createTime;
+    /**
+     * 更新人
+     */
+    private String updateBy;
+
+    /**
+     * 更新时间
+     */
+    private Date updateTime;
 }

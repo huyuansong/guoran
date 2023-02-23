@@ -9,6 +9,7 @@ import org.hibernate.validator.constraints.Length;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -20,7 +21,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CustomerBankVto implements Serializable {
+public class CustomerBalanceVto implements Serializable {
 
 	/**
 	 *
@@ -29,39 +30,61 @@ public class CustomerBankVto implements Serializable {
 	@ApiModelProperty ("")
 	private Long id;
 	/**
-	 * 客户ID
+	 * 客户id
 	 */
-	@ApiModelProperty ("客户ID")
+	@ApiModelProperty ("客户id")
 	private Long customerId;
 	/**
-	 * 户名
+	 * 客户名称
 	 */
-	@Size (max = 50, message = "编码长度不能超过50")
-	@ApiModelProperty ("户名")
-	@Length (max = 50, message = "编码长度不能超过50")
-	private String accountName;
+	@Size (max = 255, message = "编码长度不能超过255")
+	@ApiModelProperty ("客户名称")
+	@Length (max = 255, message = "编码长度不能超过255")
+	private String userName;
 	/**
-	 * 银行账户
+	 * 纳税人识别号
 	 */
-	@ApiModelProperty ("银行账户")
-	private Long bankAccount;
+	@Size (max = 255, message = "编码长度不能超过255")
+	@ApiModelProperty ("纳税人识别号")
+	@Length (max = 255, message = "编码长度不能超过255")
+	private String taxpayerIdentification;
 	/**
-	 * 开启行
+	 * 期初
 	 */
-	@Size (max = 100, message = "编码长度不能超过100")
-	@ApiModelProperty ("开启行")
-	@Length (max = 100, message = "编码长度不能超过100")
-	private String openAccountBank;
+	@ApiModelProperty ("期初")
+	private BigDecimal stageFirst;
 	/**
-	 * 联行号12位组成：3位银行代码+4位城市代码+4位银行编号+1位校验位。
+	 * 补偿
 	 */
-	@ApiModelProperty ("联行号12位组成：3位银行代码+4位城市代码+4位银行编号+1位校验位。")
-	private Long interBankNumber;
+	@ApiModelProperty ("补偿")
+	private BigDecimal compensate;
 	/**
-	 * 是否默认账户
+	 * 收款
 	 */
-	@ApiModelProperty ("是否默认账户")
-	private Integer defaultAccount;
+	@ApiModelProperty ("收款")
+	private BigDecimal collection;
+	/**
+	 * 销售退款
+	 */
+	@ApiModelProperty ("销售退款")
+	private BigDecimal salesRefund;
+	/**
+	 * 销售金额
+	 */
+	@ApiModelProperty ("销售金额")
+	private BigDecimal salesAmount;
+	/**
+	 * 货款余额
+	 */
+	@ApiModelProperty ("货款余额")
+	private BigDecimal paymentBalance;
+	/**
+	 * NC编码
+	 */
+	@Size (max = 13, message = "编码长度不能超过13")
+	@ApiModelProperty ("NC编码")
+	@Length (max = 13, message = "编码长度不能超过13")
+	private String ncCode;
 	/**
 	 * 创建人
 	 */
@@ -86,15 +109,5 @@ public class CustomerBankVto implements Serializable {
 	 */
 	@ApiModelProperty ("更新时间")
 	private Date updateTime;
-	/**
-	 * 供应商主键
-	 */
-	@ApiModelProperty ("供应商主键")
-	private String pkCust;
-	/**
-	 * 银行账户主键
-	 */
-	@ApiModelProperty ("银行账户主键")
-	private String pkId;
 
 }

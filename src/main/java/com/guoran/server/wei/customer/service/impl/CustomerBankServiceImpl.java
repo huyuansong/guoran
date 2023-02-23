@@ -20,7 +20,7 @@ public class CustomerBankServiceImpl implements CustomerBankService {
 
 	@Override
 	public List<CustomerBank> findAll(String size, String page) {
-		return customerBankRepository.findAll(size, page);
+		return customerBankRepository.findAll(Integer.parseInt(size), Integer.parseInt(page));
 	}
 
 }
