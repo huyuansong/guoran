@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.Collections;
+import java.util.Date;
 
 /**
  * <p>
@@ -18,8 +19,7 @@ import java.util.Collections;
  * </p>
  */
 @Service
-public class DrinksAutoPackerServiceImpl extends ServiceImpl<DrinksAutoPackerRepository, DrinksAutoPackerEntity>
-        implements DrinksAutoPackerService {
+public class DrinksAutoPackerServiceImpl extends ServiceImpl<DrinksAutoPackerRepository, DrinksAutoPackerEntity> implements DrinksAutoPackerService {
 
     @Resource
     private DrinksAutoPackerRepository drinksAutoPackerRepository;
@@ -34,9 +34,32 @@ public class DrinksAutoPackerServiceImpl extends ServiceImpl<DrinksAutoPackerRep
     @Override
     public DrinksAutoPackerVM getEntryBy(long id) {
         DrinksAutoPackerEntity drinksAutoPackerEntity = drinksAutoPackerRepository.selectById(id);
+        if (drinksAutoPackerEntity == null) {
+            return null;
+        }
         DrinksAutoPackerVM drinksAutoPackerVM = new DrinksAutoPackerVM();
         BeanUtils.copyProperties(drinksAutoPackerEntity, drinksAutoPackerVM);
         return drinksAutoPackerVM;
+    }
+
+    @Override
+    public void createEntry(DrinksAutoPackerVM drinksAutoPackerVM) {
+        DrinksAutoPackerEntity drinksAutoPackerEntity = new DrinksAutoPackerEntity();
+        BeanUtils.copyProperties(drinksAutoPackerVM, drinksAutoPackerEntity);
+        drinksAutoPackerEntity.setCreateTime(new Date());
+        drinksAutoPackerEntity.setUpdateTime(new Date());
+        drinksAutoPackerRepository.insert(drinksAutoPackerEntity);
+    }
+
+    @Override
+    public void updateEntry(DrinksAutoPackerVM drinksAutoPackerVM) {
+//        UpdateWrapper<DrinksAutoPackerVM> updateWrapper = new UpdateWrapper<>();
+//        updateWrapper.setEntity(drinksAutoPackerVM);
+//        DrinksAutoPackerEntity drinksAutoPackerEntity=drinksAutoPackerRepository.findById(drinksAutoPackerVM.getId());
+//        drinksAutoPackerEntity.failWhenConcurrencyViolation(drinksAutoPackerVM.getConcurrencyVersion());
+//        BeanUtils.copyProperties(drinksAutoPackerVM,drinksAutoPackerEntity);
+//        drinksAutoPackerEntity.setUpdateTime(new Date());
+//        drinksAutoPackerRepository.update(drinksAutoPackerEntity);
     }
 }
 

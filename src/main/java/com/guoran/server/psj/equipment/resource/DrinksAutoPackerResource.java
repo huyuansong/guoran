@@ -2,14 +2,13 @@ package com.guoran.server.psj.equipment.resource;
 
 
 import com.guoran.server.common.JsonResult;
+import com.guoran.server.common.exception.ImErrorCode;
+import com.guoran.server.common.i18n.MessageUtils;
 import com.guoran.server.psj.equipment.model.vto.DrinksAutoPackerVM;
 import com.guoran.server.psj.equipment.service.DrinksAutoPackerService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 
@@ -21,7 +20,6 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/equipment/DrinksAutoPackers")
 public class DrinksAutoPackerResource {
-
 
     @Resource
     private DrinksAutoPackerService drinksAutoPackerService;
@@ -39,5 +37,49 @@ public class DrinksAutoPackerResource {
         return JsonResult.success(drinksAutoPackerVM);
     }
 
+
+    /**
+     * 新增
+     */
+    @ApiOperation(value = "新增数据")
+    @PostMapping
+    public String createEntry(@RequestBody DrinksAutoPackerVM drinksAutoPackerVM) {
+
+        if (drinksAutoPackerVM == null) {
+            return null;
+        }
+        drinksAutoPackerService.createEntry(drinksAutoPackerVM);
+        return JsonResult.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), null);
+
+    }
+
+
+    /**
+     * 删除
+     */
+    @ApiOperation(value = "删除数据")
+    @DeleteMapping(value = "/delete")
+    public String deleteEntry(String ids) {
+        if (ids != null) {
+            drinksAutoPackerService.deleteByIds(ids);
+        }
+        return JsonResult.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), null);
+    }
+
+
+    /**
+     * 修改
+     */
+    @ApiOperation(value = "修改数据")
+    @PutMapping
+    public String updateEntry(@RequestBody DrinksAutoPackerVM drinksAutoPackerVM) {
+
+        if (drinksAutoPackerVM == null) {
+            return null;
+        }
+        drinksAutoPackerService.updateEntry(drinksAutoPackerVM);
+        return JsonResult.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), null);
+
+    }
 
 }

@@ -1,5 +1,6 @@
 package com.guoran.server.psj.equipment.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.guoran.server.common.BaseOfConcurrencySafeEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,6 +15,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@TableName(value = "drinks_auto_packer", excludeProperty = "concurrencyVersion")
 public class DrinksAutoPackerEntity extends BaseOfConcurrencySafeEntity {
     private Long id;
     /**

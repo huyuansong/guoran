@@ -13,4 +13,9 @@ public interface DrinksAutoPackerService extends IService<DrinksAutoPackerEntity
     int deleteByIds(String ids);
 
     DrinksAutoPackerVM getEntryBy(long id);
+
+    void createEntry(DrinksAutoPackerVM drinksAutoPackerVM);
+
+
+    void updateEntry(DrinksAutoPackerVM drinksAutoPackerVM);
 }
