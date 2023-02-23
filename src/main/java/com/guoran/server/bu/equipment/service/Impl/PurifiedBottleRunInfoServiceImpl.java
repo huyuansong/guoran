@@ -12,17 +12,20 @@ import com.guoran.server.common.search.DynamicSearch;
 import com.guoran.server.common.search.FilterGroup;
 import com.guoran.server.common.search.PageQuery;
 import org.springframework.beans.BeanUtils;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * w
  * 2023/1/25  15:20
  * 01-pro
  **/
+@Service
 public class PurifiedBottleRunInfoServiceImpl implements PurifiedBottleRunInfoService {
     //    @Autowired
 //    JwtUserUtil jwtUserUtil;
-    @Autowired
+    @Resource
     PurifiedBottleRunInfoRepository purifiedBottleRunInfoRepository;
 //    @Autowired
 //    ProductRepository productRepository;
@@ -51,7 +54,7 @@ public class PurifiedBottleRunInfoServiceImpl implements PurifiedBottleRunInfoSe
      */
     @Override
     public String createEntry(PurifiedBottleRunInfoVM purifiedBottleRunInfoVM) {
-//        //获取部门名
+        //获取部门名
 //        DepartmentEntity departmentEntity = departmentRepository.findBycode(purifiedBottleRunInfoVM.getDepartId());
 //        //获取商品名
 //        ProductEntity productEntity = productRepository.finByCode(purifiedBottleRunInfoVM.getProdectCode());
@@ -61,8 +64,8 @@ public class PurifiedBottleRunInfoServiceImpl implements PurifiedBottleRunInfoSe
 //        purifiedBottleRunInfoEntity.setProdectName(productEntity.getProductName());
 //        purifiedBottleRunInfoEntity.setCreateBy(jwtUserUtil.getUserName());
 //        purifiedBottleRunInfoEntity.setCreateTime(new Date());
-////        purifiedBottleRunInfoEntity.setUpdateTime(new Date());
-////        purifiedBottleRunInfoEntity.setNoteTakerTime();
+//        purifiedBottleRunInfoEntity.setUpdateTime(new Date());
+//        purifiedBottleRunInfoEntity.setNoteTakerTime();
 //        purifiedBottleRunInfoRepository.insert(purifiedBottleRunInfoEntity);
         return null;
     }
