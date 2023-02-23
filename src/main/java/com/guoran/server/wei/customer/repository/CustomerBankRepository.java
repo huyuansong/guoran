@@ -20,7 +20,7 @@ public interface CustomerBankRepository {
 	 */
 
 	List<CustomerBank> findAll(
-			@Param ("size") String size,
-			@Param ("page") String page
+			@Param ("size") int size,
+			@Param ("page") int page
 	);
 }

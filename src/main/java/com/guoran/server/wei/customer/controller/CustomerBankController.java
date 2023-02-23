@@ -26,8 +26,8 @@ public class CustomerBankController {
 	 * @return Result
 	 */
 	@ApiOperation (value = "客户银行信息", notes = "获取客户银行信息")
-	@GetMapping ("/bank/${size}/${page}")
-	public Result customerBankGet(@PathVariable String size, @PathVariable String page) {
+	@GetMapping ("/bank/{size}/{page}")
+	public Result customerBankGet(@PathVariable ("size") String size, @PathVariable ("page") String page) {
 		return Result.success(customerBankService.findAll(size, page));
 	}
 
