@@ -4,10 +4,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.validator.constraints.Length;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -26,7 +23,6 @@ public class CustomerBalance implements Serializable {
 	/**
 	 *
 	 */
-	@NotNull (message = "[]不能为空")
 	@ApiModelProperty ("")
 	private Long id;
 	/**
@@ -37,16 +33,12 @@ public class CustomerBalance implements Serializable {
 	/**
 	 * 客户名称
 	 */
-	@Size (max = 255, message = "编码长度不能超过255")
 	@ApiModelProperty ("客户名称")
-	@Length (max = 255, message = "编码长度不能超过255")
 	private String userName;
 	/**
 	 * 纳税人识别号
 	 */
-	@Size (max = 255, message = "编码长度不能超过255")
 	@ApiModelProperty ("纳税人识别号")
-	@Length (max = 255, message = "编码长度不能超过255")
 	private String taxpayerIdentification;
 	/**
 	 * 期初
@@ -81,16 +73,12 @@ public class CustomerBalance implements Serializable {
 	/**
 	 * NC编码
 	 */
-	@Size (max = 13, message = "编码长度不能超过13")
 	@ApiModelProperty ("NC编码")
-	@Length (max = 13, message = "编码长度不能超过13")
 	private String ncCode;
 	/**
 	 * 创建人
 	 */
-	@Size (max = 32, message = "编码长度不能超过32")
 	@ApiModelProperty ("创建人")
-	@Length (max = 32, message = "编码长度不能超过32")
 	private String createBy;
 	/**
 	 * 创建时间
@@ -100,9 +88,7 @@ public class CustomerBalance implements Serializable {
 	/**
 	 * 更新人
 	 */
-	@Size (max = 32, message = "编码长度不能超过32")
 	@ApiModelProperty ("更新人")
-	@Length (max = 32, message = "编码长度不能超过32")
 	private String updateBy;
 	/**
 	 * 更新时间

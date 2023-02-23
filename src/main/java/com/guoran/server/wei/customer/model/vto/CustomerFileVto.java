@@ -1,10 +1,13 @@
-package com.guoran.server.wei.customer.model;
+package com.guoran.server.wei.customer.model.vto;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.Length;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -17,11 +20,12 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class CustomerFile implements Serializable {
+public class CustomerFileVto implements Serializable {
 
 	/**
 	 * id
 	 */
+	@NotNull (message = "[id]不能为空")
 	@ApiModelProperty ("id")
 	private Long id;
 	/**
@@ -47,12 +51,16 @@ public class CustomerFile implements Serializable {
 	/**
 	 * 文件名称
 	 */
+	@Size (max = 100, message = "编码长度不能超过100")
 	@ApiModelProperty ("文件名称")
+	@Length (max = 100, message = "编码长度不能超过100")
 	private String fileName;
 	/**
 	 * 附件地址
 	 */
+	@Size (max = 255, message = "编码长度不能超过255")
 	@ApiModelProperty ("附件地址")
+	@Length (max = 255, message = "编码长度不能超过255")
 	private String fileUrl;
 	/**
 	 * 文件大小
@@ -72,7 +80,9 @@ public class CustomerFile implements Serializable {
 	/**
 	 * 创建时间
 	 */
+	@Size (max = 100, message = "编码长度不能超过100")
 	@ApiModelProperty ("创建时间")
+	@Length (max = 100, message = "编码长度不能超过100")
 	private String createBy;
 	/**
 	 * 修改人
@@ -82,7 +92,9 @@ public class CustomerFile implements Serializable {
 	/**
 	 * 修改时间
 	 */
+	@Size (max = 100, message = "编码长度不能超过100")
 	@ApiModelProperty ("修改时间")
+	@Length (max = 100, message = "编码长度不能超过100")
 	private String updateBy;
 	/**
 	 * 文件所属 0 客户信息  1网点信息

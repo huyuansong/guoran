@@ -12,15 +12,14 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 客户管理-客户银行信息
+ * 客户管理-分销商信息
  *
- * @author Wei
- * @TableName customer_bank
+ * @TableName customer_distributor
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class CustomerBankVto implements Serializable {
+public class CustomerDistributorVto implements Serializable {
 
 	/**
 	 *
@@ -29,39 +28,36 @@ public class CustomerBankVto implements Serializable {
 	@ApiModelProperty ("")
 	private Long id;
 	/**
-	 * 客户ID
+	 * 客户id
 	 */
-	@ApiModelProperty ("客户ID")
+	@ApiModelProperty ("客户id")
 	private Long customerId;
 	/**
-	 * 户名
-	 */
-	@Size (max = 50, message = "编码长度不能超过50")
-	@ApiModelProperty ("户名")
-	@Length (max = 50, message = "编码长度不能超过50")
-	private String accountName;
-	/**
-	 * 银行账户
-	 */
-	@ApiModelProperty ("银行账户")
-	private Long bankAccount;
-	/**
-	 * 开启行
+	 * 分销商名称
 	 */
 	@Size (max = 100, message = "编码长度不能超过100")
-	@ApiModelProperty ("开启行")
+	@ApiModelProperty ("分销商名称")
 	@Length (max = 100, message = "编码长度不能超过100")
-	private String openAccountBank;
+	private String distributorName;
 	/**
-	 * 联行号12位组成：3位银行代码+4位城市代码+4位银行编号+1位校验位。
+	 * 联系人
 	 */
-	@ApiModelProperty ("联行号12位组成：3位银行代码+4位城市代码+4位银行编号+1位校验位。")
-	private Long interBankNumber;
+	@Size (max = 100, message = "编码长度不能超过100")
+	@ApiModelProperty ("联系人")
+	@Length (max = 100, message = "编码长度不能超过100")
+	private String contacts;
 	/**
-	 * 是否默认账户
+	 * 联系电话
 	 */
-	@ApiModelProperty ("是否默认账户")
-	private Integer defaultAccount;
+	@ApiModelProperty ("联系电话")
+	private Long contactNumber;
+	/**
+	 * 联系地址
+	 */
+	@Size (max = 100, message = "编码长度不能超过100")
+	@ApiModelProperty ("联系地址")
+	@Length (max = 100, message = "编码长度不能超过100")
+	private String contactAddress;
 	/**
 	 * 创建人
 	 */
@@ -86,15 +82,6 @@ public class CustomerBankVto implements Serializable {
 	 */
 	@ApiModelProperty ("更新时间")
 	private Date updateTime;
-	/**
-	 * 供应商主键
-	 */
-	@ApiModelProperty ("供应商主键")
-	private String pkCust;
-	/**
-	 * 银行账户主键
-	 */
-	@ApiModelProperty ("银行账户主键")
-	private String pkId;
+
 
 }
