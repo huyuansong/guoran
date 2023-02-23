@@ -7,6 +7,11 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * <p>
+ * 设备管理-设备运行记录-饮料车间-自动包装机运行记录DTO
+ * </p>
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -72,6 +77,7 @@ public class DrinksAutoPackerVM {
      * 备注
      */
     private String remark;
+
     /*
      * 并发版本号
      * */
