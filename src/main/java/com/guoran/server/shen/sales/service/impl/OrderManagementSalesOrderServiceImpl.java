@@ -1,13 +1,13 @@
-package com.guoran.server.shensales.service.impl;
+package com.guoran.server.shen.sales.service.impl;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.guoran.server.common.search.DynamicSearch;
 import com.guoran.server.common.search.FilterGroup;
 import com.guoran.server.common.search.PageQuery;
-import com.guoran.server.shensales.repository.OrderManagementSalesOrderRepository;
-import com.guoran.server.shensales.service.OrderManagementSalesOrderService;
-import com.guoran.server.shensales.vmodel.OrderManagementSalesOrderVM;
+import com.guoran.server.shen.sales.repository.OrderManagementSalesOrderRepository;
+import com.guoran.server.shen.sales.service.OrderManagementSalesOrderService;
+import com.guoran.server.shen.sales.vmodel.OrderManagementSalesOrderVM;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

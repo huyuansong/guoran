@@ -1,4 +1,4 @@
-package com.guoran.server.shensales.vmodel;
+package com.guoran.server.shen.sales.vmodel;
 
 import lombok.Data;
 

@@ -1,9 +1,8 @@
-package com.guoran.server.shensales.service;
+package com.guoran.server.shen.sales.service;
 
 import com.github.pagehelper.Page;
 import com.guoran.server.common.search.PageQuery;
-import com.guoran.server.shensales.vmodel.OrderManagementSalesOrderVM;
-import org.springframework.stereotype.Service;
+import com.guoran.server.shen.sales.vmodel.OrderManagementSalesOrderVM;
 
 
 public interface OrderManagementSalesOrderService {

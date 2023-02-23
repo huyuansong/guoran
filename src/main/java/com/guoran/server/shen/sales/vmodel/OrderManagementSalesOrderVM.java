@@ -1,7 +1,8 @@
-package com.guoran.server.shensales.model;
+package com.guoran.server.shen.sales.vmodel;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.guoran.server.common.BaseOfConcurrencySafeEntity;
+
+import com.guoran.server.common.file.model.OSSFile;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,13 +11,13 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 /**
  * <p>
-    销售订单表主键
+    销售订单表主键DTO
    </p>
  *
- * @table order_management_sales_order
  * @author zhangjx
  * @create 2020-08-20
  * @Modify By
@@ -24,7 +25,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrderManagementSalesOrderEntity extends BaseOfConcurrencySafeEntity {
+public class OrderManagementSalesOrderVM {
     /**
      * 销售订单表主键ID
      */
@@ -46,7 +47,7 @@ public class OrderManagementSalesOrderEntity extends BaseOfConcurrencySafeEntity
      * */
     private Integer customerId;
     /**
-     * 客户
+     * 客户名称
      */
     private String customer;
     /**
@@ -92,6 +93,20 @@ public class OrderManagementSalesOrderEntity extends BaseOfConcurrencySafeEntity
      * 已执行金额
      */
     private BigDecimal amountExecuted;
+
+    /*
+     * 并发版本号
+     * */
+    private Integer concurrencyVersion;
+    /**
+     * 销售商品明细
+     * */
+    private List<OrderMangProductDetailedVm> orderMangProductDetailedVmList;
+
+    /**
+     *  销售明细表
+     * */
+    private List<ManagementSalesDetailsVM> managementSalesDetailsVMList;
     /**
      *  创建人
      * */
@@ -119,11 +134,14 @@ public class OrderManagementSalesOrderEntity extends BaseOfConcurrencySafeEntity
      * 合同id
      * */
     private String  contractId;
-
     /**
      * 驳回原因
      * */
     private String turnDown;
+    /**
+     * 合同list
+     * */
+    private List<OSSFile> ossFiles;
     /**
      * 销售员公司
      */
@@ -132,5 +150,4 @@ public class OrderManagementSalesOrderEntity extends BaseOfConcurrencySafeEntity
      * 销售员部门
      */
     private String salesDepartmentCode;
-
 }
