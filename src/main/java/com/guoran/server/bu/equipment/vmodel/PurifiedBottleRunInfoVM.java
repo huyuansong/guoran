@@ -1,4 +1,4 @@
-package com.guoran.server.psj.equipment.model.vto;
+package com.guoran.server.bu.equipment.vmodel;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,10 +7,15 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * w
+ * 2023/1/25  15:09
+ * 01-pro
+ **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class DrinksAutoPackerVM {
+public class PurifiedBottleRunInfoVM {
     private Long id;
     /**
      * 部门ID
@@ -41,37 +46,50 @@ public class DrinksAutoPackerVM {
      */
     private Date noteTakerTime;
     /**
-     * 程序号
+     * 压力（Mpa）
      */
-    private String programNum;
+    private BigDecimal programNum;
     /**
-     * 主机工作速度
+     * 冷干机温度/℃
      */
     private BigDecimal hostRunSpeed;
     /**
-     * 胶机温度
+     * 冷却水温度/℃
      */
     private BigDecimal glueMachineTemperature;
     /**
-     * 胶管温度
+     * 温控温度/℃
      */
     private BigDecimal rubberHoseTemperature;
     /**
-     * 喷嘴温度
+     * 1加温温度/℃
      */
-    private BigDecimal injectorTemperature;
+    private BigDecimal oneTemperature;
     /**
-     * 压力
+     * 2加温温度/℃
      */
-    private BigDecimal pressure;
+    private BigDecimal twoTemperature;
     /**
-     * 于小宁状况
+     * 3加温温度/℃
      */
-    private String yuState;
+    private BigDecimal threeTemperature;
+    /**
+     * 4加温温度/℃/℃
+     */
+    private BigDecimal fourTemperature;
+    /**
+     * 5加温温度/℃
+     */
+    private BigDecimal fiveTemperature;
+    /**
+     * 使用瓶胚生产日期
+     */
+    private Date productionDate;
     /**
      * 备注
      */
     private String remark;
+
     /*
      * 并发版本号
      * */
@@ -93,4 +111,5 @@ public class DrinksAutoPackerVM {
      * 更新时间
      */
     private Date updateTime;
+
 }

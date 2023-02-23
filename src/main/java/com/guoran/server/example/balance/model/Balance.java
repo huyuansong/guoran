@@ -1,4 +1,4 @@
-package com.guoran.server.test.model;
+package com.guoran.server.example.balance.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
