@@ -19,7 +19,7 @@ public class CustomerBalanceServiceImpl implements CustomerBanlanceService {
 
 	@Override
 	public Page<CustomerBalance> findAll(String size, String page) {
-		
+
 		return customerBalanceRepository.findAll(Integer.parseInt(size), Integer.parseInt(page));
 	}
 

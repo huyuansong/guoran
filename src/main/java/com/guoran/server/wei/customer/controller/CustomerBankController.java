@@ -1,6 +1,7 @@
 package com.guoran.server.wei.customer.controller;
 
 import com.guoran.server.common.Result;
+import com.guoran.server.common.search.PageQuery;
 import com.guoran.server.wei.customer.service.CustomerBankService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -28,8 +29,9 @@ public class CustomerBankController {
 	@ApiOperation (value = "客户银行信息", notes = "获取客户银行信息")
 	@GetMapping ("/bank/{size}/{page}")
 	public Result customerBankGet(@PathVariable ("size") String size, @PathVariable ("page") String page) {
-		return Result.success(customerBankService.findAll(size, page));
-	}
+		PageQuery query = new PageQuery();
 
+		return Result.success(customerBankService.findAll(query));
+	}
 
 }
