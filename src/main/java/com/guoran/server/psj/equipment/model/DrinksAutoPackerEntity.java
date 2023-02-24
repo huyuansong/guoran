@@ -15,7 +15,7 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName(value = "drinks_auto_packer", excludeProperty = "concurrencyVersion")
+@TableName(value = "drinks_auto_packer")
 public class DrinksAutoPackerEntity extends BaseOfConcurrencySafeEntity {
     private Long id;
     /**

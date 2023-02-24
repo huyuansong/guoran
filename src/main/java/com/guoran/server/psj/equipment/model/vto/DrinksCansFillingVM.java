@@ -1,4 +1,4 @@
-package com.guoran.server.bu.equipment.vmodel;
+package com.guoran.server.psj.equipment.model.vto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,14 +8,18 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * w
- * 2023/1/25  15:09
- * 01-pro
- **/
+ * <p>
+ * 设备管理-设备运行记录-饮料车间-易拉罐灌装记录DTO
+ * </p>
+ *
+ * @author zhangjx
+ * @create 2020-08-25
+ * @Modify By
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PurifiedBottleRunInfoVM {
+public class DrinksCansFillingVM {
     private Long id;
     /**
      * 部门ID
@@ -46,45 +50,53 @@ public class PurifiedBottleRunInfoVM {
      */
     private Date noteTakerTime;
     /**
-     * 压力（Mpa）
+     * 灌装温度（℃）
      */
-    private BigDecimal programNum;
+    private BigDecimal fillingTemperature;
     /**
-     * 冷干机温度/℃
+     * 易拉罐机-自动进料
      */
-    private BigDecimal hostRunSpeed;
+    private String cansAutoFeed;
     /**
-     * 冷却水温度/℃
+     * 易拉罐机-自动放盖
      */
-    private BigDecimal glueMachineTemperature;
+    private String cansAutoCover;
     /**
-     * 温控温度/℃
+     * 液氮加注机-液位补偿量
      */
-    private BigDecimal rubberHoseTemperature;
+    private BigDecimal levelCompensation;
     /**
-     * 1加温温度/℃
+     * 液氮加注机-速度补偿量
      */
-    private BigDecimal oneTemperature;
+    private BigDecimal speedCompensation;
     /**
-     * 2加温温度/℃
+     * 液氮加注机-实际加注量
      */
-    private BigDecimal twoTemperature;
+    private BigDecimal actualAmount;
     /**
-     * 3加温温度/℃
+     * 液氮加注机-设定加注时长
      */
-    private BigDecimal threeTemperature;
+    private BigDecimal setTime;
     /**
-     * 4加温温度/℃/℃
+     * 液氮加注机-速度/min
      */
-    private BigDecimal fourTemperature;
+    private BigDecimal speed;
     /**
-     * 5加温温度/℃
+     * 液氮加注机-液位/CM
      */
-    private BigDecimal fiveTemperature;
+    private BigDecimal level;
     /**
-     * 使用瓶胚生产日期
+     * 液氮加注机-系统运行时间/ms
      */
-    private Date productionDate;
+    private BigDecimal sysRunTime;
+    /**
+     * 液氮加注机-罐子间距/mm
+     */
+    private BigDecimal canSpacing;
+    /**
+     * 液氮加注机-加注检测器到加注头中心距离/mm
+     */
+    private BigDecimal distance;
     /**
      * 备注
      */
@@ -111,5 +123,4 @@ public class PurifiedBottleRunInfoVM {
      * 更新时间
      */
     private Date updateTime;
-
 }

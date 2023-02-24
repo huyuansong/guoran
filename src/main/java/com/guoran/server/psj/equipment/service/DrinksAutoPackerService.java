@@ -1,6 +1,8 @@
 package com.guoran.server.psj.equipment.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.guoran.server.common.search.PageQuery;
+import com.guoran.server.common.search.PageResult;
 import com.guoran.server.psj.equipment.model.DrinksAutoPackerEntity;
 import com.guoran.server.psj.equipment.model.vto.DrinksAutoPackerVM;
 
@@ -18,4 +20,6 @@ public interface DrinksAutoPackerService extends IService<DrinksAutoPackerEntity
 
 
     void updateEntry(DrinksAutoPackerVM drinksAutoPackerVM);
+
+    PageResult findEntrysByPage(PageQuery pageQuery);
 }

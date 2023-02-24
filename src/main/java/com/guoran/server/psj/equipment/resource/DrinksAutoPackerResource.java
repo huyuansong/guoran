@@ -4,8 +4,11 @@ package com.guoran.server.psj.equipment.resource;
 import com.guoran.server.common.JsonResult;
 import com.guoran.server.common.exception.ImErrorCode;
 import com.guoran.server.common.i18n.MessageUtils;
+import com.guoran.server.common.search.PageQuery;
+import com.guoran.server.common.search.PageResult;
 import com.guoran.server.psj.equipment.model.vto.DrinksAutoPackerVM;
 import com.guoran.server.psj.equipment.service.DrinksAutoPackerService;
+import com.guoran.server.psj.equipment.utils.CheckInputUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
@@ -35,6 +38,22 @@ public class DrinksAutoPackerResource {
         }
         DrinksAutoPackerVM drinksAutoPackerVM = drinksAutoPackerService.getEntryBy(id);
         return JsonResult.success(drinksAutoPackerVM);
+    }
+
+
+    /**
+     * 查询分页数据
+     */
+    @ApiOperation(value = "查询分页数据")
+    @PostMapping(value = "/page")
+    public String getEntrysByPage(@RequestBody PageQuery pageQuery) {
+
+        if (CheckInputUtil.chikcInput(pageQuery)) {
+            return JsonResult.failed("请勿输入特殊字符");
+        }
+        PageResult pageResult = drinksAutoPackerService.findEntrysByPage(pageQuery);
+
+        return JsonResult.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), pageResult);
     }
 
 

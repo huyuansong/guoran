@@ -2,10 +2,16 @@ package com.guoran.server.psj.equipment.service.impl;
 
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.github.pagehelper.Page;
+import com.guoran.server.common.search.DynamicSearch;
+import com.guoran.server.common.search.FilterGroup;
+import com.guoran.server.common.search.PageQuery;
+import com.guoran.server.common.search.PageResult;
 import com.guoran.server.psj.equipment.model.DrinksAutoPackerEntity;
 import com.guoran.server.psj.equipment.model.vto.DrinksAutoPackerVM;
 import com.guoran.server.psj.equipment.repository.DrinksAutoPackerRepository;
 import com.guoran.server.psj.equipment.service.DrinksAutoPackerService;
+import com.guoran.server.psj.equipment.utils.PageUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
@@ -27,7 +33,6 @@ public class DrinksAutoPackerServiceImpl extends ServiceImpl<DrinksAutoPackerRep
     @Override
     public int deleteByIds(String ids) {
         String[] Ids = ids.split(",");
-
         return drinksAutoPackerRepository.deleteBatchIds(Collections.singletonList(Ids));
     }
 
@@ -53,13 +58,22 @@ public class DrinksAutoPackerServiceImpl extends ServiceImpl<DrinksAutoPackerRep
 
     @Override
     public void updateEntry(DrinksAutoPackerVM drinksAutoPackerVM) {
-//        UpdateWrapper<DrinksAutoPackerVM> updateWrapper = new UpdateWrapper<>();
-//        updateWrapper.setEntity(drinksAutoPackerVM);
-//        DrinksAutoPackerEntity drinksAutoPackerEntity=drinksAutoPackerRepository.findById(drinksAutoPackerVM.getId());
-//        drinksAutoPackerEntity.failWhenConcurrencyViolation(drinksAutoPackerVM.getConcurrencyVersion());
-//        BeanUtils.copyProperties(drinksAutoPackerVM,drinksAutoPackerEntity);
-//        drinksAutoPackerEntity.setUpdateTime(new Date());
-//        drinksAutoPackerRepository.update(drinksAutoPackerEntity);
+        DrinksAutoPackerEntity drinksAutoPackerEntity = new DrinksAutoPackerEntity();
+        BeanUtils.copyProperties(drinksAutoPackerVM, drinksAutoPackerEntity);
+        drinksAutoPackerEntity.setUpdateTime(new Date());
+        drinksAutoPackerRepository.updateById(drinksAutoPackerEntity);
+    }
+
+    @Override
+    public PageResult findEntrysByPage(PageQuery pageQuery) {
+
+        FilterGroup filterGroup = pageQuery.getWhere();
+        //自动转字符串
+        String where = DynamicSearch.getInstance().buildWhere(filterGroup);
+        Page<DrinksAutoPackerVM> pageInfo = drinksAutoPackerRepository.findEntrysByPage(where);
+
+        return PageUtils.PageCopy(pageQuery, pageInfo);
+
     }
 }
 
