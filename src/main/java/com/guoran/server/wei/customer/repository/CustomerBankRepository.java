@@ -3,6 +3,7 @@ package com.guoran.server.wei.customer.repository;
 
 import com.guoran.server.wei.customer.model.CustomerBank;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -14,8 +15,12 @@ public interface CustomerBankRepository {
 
 	/**
 	 * 查询所有
+	 *
 	 * @return List<CustomerBank>
-	* */
+	 */
 
-	List<CustomerBank> findAll();
+	List<CustomerBank> findAll(
+			@Param ("size") int size,
+			@Param ("page") int page
+	);
 }

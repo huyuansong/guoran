@@ -15,29 +15,27 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 @Transactional
 public class OrderManagementSalesOrderServiceImpl implements OrderManagementSalesOrderService {
+	@Autowired
+	OrderManagementSalesOrderRepository orderManagementSalesOrderRepository;
 
+	@Override
+	public Page<OrderManagementSalesOrderVM> findEntrysByPage(PageQuery pageQuery, OrderManagementSalesOrderVM orderManagementSalesOrderVM, String status) {
 
-    @Autowired
-    OrderManagementSalesOrderRepository orderManagementSalesOrderRepository;
+		FilterGroup filterGroup = pageQuery.getWhere();
+		//自动转字符串
+		String where = DynamicSearch.getInstance().buildWhere(filterGroup);
+		if (status != null) {
+			where += " and ( audit_Status='2' or audit_Status='1'  or audit_Status ='7')";
+		}
+		if (orderManagementSalesOrderVM.getSalesOrderNumber() != null) {
+			where += " and sales_Order_Number like '%" + orderManagementSalesOrderVM.getSalesOrderNumber() + "%'";
+		}
+		if (orderManagementSalesOrderVM.getSalesperson() != null) {
+			where += " and salesperson like '%" + orderManagementSalesOrderVM.getSalesperson() + "%'";
+		}
+		PageHelper.startPage(pageQuery.getPageNum(), pageQuery.getPageSize(), pageQuery.getOrderBy());
+		System.out.println(where + "llllllll");
+		return orderManagementSalesOrderRepository.findEntrysByPage(where);
 
-    @Override
-    public Page<OrderManagementSalesOrderVM>  findEntrysByPage(PageQuery pageQuery, OrderManagementSalesOrderVM orderManagementSalesOrderVM, String status) {
-
-        FilterGroup filterGroup=pageQuery.getWhere();
-        //自动转字符串
-        String where= DynamicSearch.getInstance().buildWhere(filterGroup);
-        if(status!=null){
-            where+=" and ( audit_Status='2' or audit_Status='1'  or audit_Status ='7')";
-        }
-        if(orderManagementSalesOrderVM.getSalesOrderNumber()!=null){
-            where+=" and sales_Order_Number like '%"+orderManagementSalesOrderVM.getSalesOrderNumber()+"%'";
-        }
-        if(orderManagementSalesOrderVM.getSalesperson()!=null){
-            where+=" and salesperson like '%"+orderManagementSalesOrderVM.getSalesperson()+"%'";
-        }
-        PageHelper.startPage(pageQuery.getPageNum(),pageQuery.getPageSize(),pageQuery.getOrderBy());
-        System.out.println(where+"llllllll");
-        return orderManagementSalesOrderRepository.findEntrysByPage(where);
-
-     }
+	}
 }

@@ -18,12 +18,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-@Api (tags = {"销售订单表主键"})
+@Api(tags = {"销售订单表主键"})
 @RestController
-@RequestMapping ("/sales/OrderManagementSalesOrderEntity")
+@RequestMapping("/sales/OrderManagementSalesOrderEntity")
 public class OrderManagementSalesOrderResource {
     /*    @Autowired
-		private ManagementSalesDetailsService managementSalesDetailsService;*/
+        private ManagementSalesDetailsService managementSalesDetailsService;*/
     @Autowired
     ObjectMapper objectMapper;
     @Autowired
@@ -31,8 +31,8 @@ public class OrderManagementSalesOrderResource {
 /*    @Autowired
     MenuService menuService;*/
 
-    @ApiOperation (value = "查询分页数据")
-    @RequestMapping (value = "/page", method = RequestMethod.POST)
+    @ApiOperation(value = "查询分页数据")
+    @RequestMapping(value = "/page", method = RequestMethod.POST, produces = "application/json;charset=UTF-8")
     public String getEntryByPage(@RequestBody PageQuery pageQuery, OrderManagementSalesOrderVM orderManagementSalesOrderVM, String status) {
         String result = null;
 

@@ -1,28 +1,21 @@
-package com.guoran.server.psj.equipment.model;
+package com.guoran.server.psj.equipment.model.vto;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.hisoft.pam.im.common.model.BaseEntity;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
-
 /**
- * 设备管理-设备运行记录-饮料车间-自动包装机运行记录
+ * <p>
+ * 设备管理-设备运行记录-饮料车间-自动包装机运行记录DTO
+ * </p>
  */
-@TableName(value = "drinks_auto_packer")
 @Data
-public class DrinksAutoPacker extends BaseEntity {
-    @TableField(exist = false)
-    private static final long serialVersionUID = 1L;
-    /**
-     *
-     */
-    @TableId(type = IdType.AUTO)
+@AllArgsConstructor
+@NoArgsConstructor
+public class DrinksAutoPackerVM {
     private Long id;
     /**
      * 部门ID
@@ -85,5 +78,25 @@ public class DrinksAutoPacker extends BaseEntity {
      */
     private String remark;
 
+    /*
+     * 并发版本号
+     * */
+    private Integer concurrencyVersion;
+    /**
+     * 创建人
+     */
+    private String createBy;
+    /**
+     * 创建时间
+     */
+    private Date createTime;
+    /**
+     * 更新人
+     */
+    private String updateBy;
 
+    /**
+     * 更新时间
+     */
+    private Date updateTime;
 }
