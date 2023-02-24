@@ -1,10 +1,11 @@
 package com.guoran.server.lsf.Warehouse.model;
 
-
 import com.guoran.server.common.BaseOfConcurrencySafeEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.Date;
 
 /**
  * <p>
@@ -22,7 +23,7 @@ import lombok.NoArgsConstructor;
 public class ValidityWarningEntity extends BaseOfConcurrencySafeEntity {
     private Long id;
     /**
-     * 仓库编码:CK+4位序号
+     * 仓库编码：CK+4位序号
      */
     private String warehouseCode;
     /**
@@ -30,9 +31,9 @@ public class ValidityWarningEntity extends BaseOfConcurrencySafeEntity {
      */
     private String warehouseName;
     /**
-     * 商品编号:SPBM+6位序号
+     * 商品编码：SPBM+6位序号
      */
-    private String productCOde;
+    private String productCode;
     /**
      * 商品编码名称
      */
@@ -52,7 +53,7 @@ public class ValidityWarningEntity extends BaseOfConcurrencySafeEntity {
     /**
      * 内部计量单位
      */
-    private Integer innermeasurment;
+    private Integer innerMeasurement;
     /**
      * 商品批次号
      */
@@ -60,23 +61,27 @@ public class ValidityWarningEntity extends BaseOfConcurrencySafeEntity {
     /**
      * 库存数量
      */
-    private Integer inventroyQuantity;
+    private Integer inventoryQuantity;
     /**
      * 生产日期
      */
-    private Data manufactureDate;
+    private Date manufactureDate;
     /**
      * 有效日期
      */
-    private Data effectivDate;
+    private Date effectiveDate;
     /**
      * 剩余到期天数
      */
-    private Long raminingMaturityDays;
+    private Long remainingMaturityDays;
     /**
      * 创建人
      */
-    private String createTime;
+    private String createBy;
+    /**
+     * 创建时间
+     */
+    private Date createTime;
     /**
      * 更新人
      */
@@ -84,6 +89,6 @@ public class ValidityWarningEntity extends BaseOfConcurrencySafeEntity {
     /**
      * 更新时间
      */
-    private Data updateTime;
+    private Date updateTime;
 
 }

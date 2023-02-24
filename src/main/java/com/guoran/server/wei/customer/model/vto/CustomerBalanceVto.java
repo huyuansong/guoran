@@ -23,10 +23,11 @@ import java.util.Date;
 @NoArgsConstructor
 public class CustomerBalanceVto implements Serializable {
 
+
 	/**
 	 *
 	 */
-	@NotNull (message = "[]不能为空")
+	@NotNull (message = "[ ]不能为空")
 	@ApiModelProperty ("")
 	private Long id;
 	/**

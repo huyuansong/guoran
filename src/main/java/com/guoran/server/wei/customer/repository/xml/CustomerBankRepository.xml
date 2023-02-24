@@ -3,6 +3,15 @@
 
 <mapper namespace="com.guoran.server.wei.customer.repository.CustomerBankRepository">
     <select id="findAll" resultType="CustomerBank">
-        select * from customer_bank limit #{page} , #{size}
+        select * from customer_bank limit #{pageNum} , #{pageSize}
+
+        <trim prefix="where" suffix="and">
+            <if test="name != null">
+                and name like concat('%',#{name},'%')
+            </if>
+
+        </trim>
+
     </select>
+
 </mapper>

@@ -1,9 +1,9 @@
 package com.guoran.server.wei.customer.repository;
 
 
+import com.guoran.server.common.search.PageQuery;
 import com.guoran.server.wei.customer.model.CustomerBank;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -20,7 +20,6 @@ public interface CustomerBankRepository {
 	 */
 
 	List<CustomerBank> findAll(
-			@Param ("size") int size,
-			@Param ("page") int page
+			PageQuery page
 	);
 }

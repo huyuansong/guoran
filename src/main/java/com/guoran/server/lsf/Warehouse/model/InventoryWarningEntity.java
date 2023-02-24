@@ -5,7 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 /**
  * <p>
  * 仓库管理-库存预警
@@ -22,11 +21,11 @@ import lombok.NoArgsConstructor;
 public class InventoryWarningEntity extends BaseOfConcurrencySafeEntity {
     private Long id;
     /**
-     * *商品编码：SPBM+6位序号
+     * 商品编码：SPBM+6位序号
      */
     private String productCode;
     /**
-     * *仓库编码；CK+4位序号
+     * 仓库编码：CK+4位序号
      */
     private String warehouseCode;
     /**
@@ -60,7 +59,7 @@ public class InventoryWarningEntity extends BaseOfConcurrencySafeEntity {
     /**
      * 库存数量
      */
-    private Integer inventroyQuantity;
+    private Integer inventoryQuantity;
     /**
      * 待出库数量
      */
@@ -68,7 +67,7 @@ public class InventoryWarningEntity extends BaseOfConcurrencySafeEntity {
     /**
      * 待入库数量
      */
-    private Integer waitInwarhouseNum;
+    private Integer waitInwarehouseNum;
     /**
      * 余量
      */
