@@ -12,6 +12,10 @@ import com.guoran.server.common.search.DynamicSearch;
 import com.guoran.server.common.search.FilterGroup;
 import com.guoran.server.common.search.PageQuery;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
