@@ -22,13 +22,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/sales/OrderManagementSalesOrderEntity")
 public class OrderManagementSalesOrderResource {
-    /*    @Autowired
-        private ManagementSalesDetailsService managementSalesDetailsService;*/
+    /*  @Autowired
+        private ManagementSalesDetailsService managementSalesDetailsService;
+    */
     @Autowired
     ObjectMapper objectMapper;
     @Autowired
     private OrderManagementSalesOrderService orderManagementSalesOrderService;
-/*    @Autowired
+/*  @Autowired
     MenuService menuService;*/
 
     @ApiOperation(value = "查询分页数据")
@@ -36,17 +37,15 @@ public class OrderManagementSalesOrderResource {
     public String getEntryByPage(@RequestBody PageQuery pageQuery, OrderManagementSalesOrderVM orderManagementSalesOrderVM, String status) {
         String result = null;
 
-        System.out.println("aaaaddddddddf");
         try {
-            Page<OrderManagementSalesOrderVM> pages = orderManagementSalesOrderService.findEntrysByPage(pageQuery, orderManagementSalesOrderVM, status);
 
+            Page<OrderManagementSalesOrderVM> pages = orderManagementSalesOrderService.findEntrysByPage(pageQuery, orderManagementSalesOrderVM, status);
             PageResult pageResult = new PageResult();
             pageResult.setPageNum(pageQuery.getPageNum());
             pageResult.setRows(pages);
             pageResult.setTotal(pageResult.getTotal());
             pageResult.setPages(pageResult.getPages());
             result = Result.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), pageResult);
-            System.out.println(result);
 
         } catch (ServiceException serviceException) {
             throw serviceException;
@@ -57,4 +56,13 @@ public class OrderManagementSalesOrderResource {
 
         return result;
     }
+
+    @RequestMapping("/add")
+    public String saveEntry(@RequestBody OrderManagementSalesOrderVM orderManagementSalesOrderVM) {
+
+        orderManagementSalesOrderService.saveEntry(orderManagementSalesOrderVM);
+
+        return "";
+    }
+
 }
