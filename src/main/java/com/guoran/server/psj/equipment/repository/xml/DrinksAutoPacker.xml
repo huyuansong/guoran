@@ -3,5 +3,10 @@
 
 <mapper namespace="com.guoran.server.psj.equipment.repository.DrinksAutoPackerRepository">
 
+    <select id="findEntrysByPage" resultType="com.guoran.server.psj.equipment.model.vto.DrinksAutoPackerVM">
+        select *
+        from drinks_auto_packer
+        where 1 = 1 ${where}
+    </select>
 
 </mapper>
