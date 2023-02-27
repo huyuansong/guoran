@@ -9,23 +9,32 @@ import com.guoran.server.common.search.PageQuery;
 import com.guoran.server.common.search.PageResult;
 import com.guoran.server.common.utils.CheckInputUtil;
 import com.guoran.server.common.utils.StringUtils;
-import com.guoran.server.liu.financial.service.VoucherDetailsService;
-import com.guoran.server.liu.financial.vmodel.VoucherDetailsVM;
+import com.guoran.server.liu.financial.service.VoucherService;
+import com.guoran.server.liu.financial.vmodel.VoucherVM;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
-
-@Api(tags = {"财务管理"})
+/**
+ * <p>
+ * 财务管理-凭证管理 rest接口
+ * </p>
+ *
+ * @author zhangjx
+ * @create 2020-08-28
+ * @Modify By
+ */
+@Api(tags = {"财务管理-凭证管理"})
 @RestController
-@RequestMapping("/financial/voucherDetails")
-public class VoucherDetailsResource {
-    @Autowired
-    private VoucherDetailsService voucherDetailsService;
+@RequestMapping("/financial/vouchers")
+public class VoucherResource {
+    @Resource
+    private VoucherService voucherService;
 
     /**
      * 根据id查询
@@ -35,8 +44,8 @@ public class VoucherDetailsResource {
     public String getEntry(@PathVariable long id) {
         String result = null;
         try {
-            VoucherDetailsVM voucherDetailsVM = voucherDetailsService.getEntryBy(id);
-            result = JsonResult.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), voucherDetailsVM);
+            VoucherVM voucherVM = voucherService.getEntryBy(id);
+            result = JsonResult.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), voucherVM);
         } catch (ServiceException serviceException) {
             throw serviceException;
         } catch (Exception e) {
@@ -58,7 +67,7 @@ public class VoucherDetailsResource {
             if (checkInputUtil.chikcInput(pageQuery)) {
                 return JsonResult.failed("请勿输入特殊字符");
             }
-            Page<VoucherDetailsVM> pageInfo = voucherDetailsService.findEntrysByPage(pageQuery);
+            Page<VoucherVM> pageInfo = voucherService.findEntrysByPage(pageQuery);
             PageResult pageResult = new PageResult();
             pageResult.setPageNum(pageQuery.getPageNum());
             pageResult.setRows(pageInfo);
@@ -79,9 +88,9 @@ public class VoucherDetailsResource {
      */
     @ApiOperation(value = "新增数据")
     @RequestMapping(method = RequestMethod.POST)
-    public String createEntry(@RequestBody VoucherDetailsVM voucherDetailsVM) {
+    public String createEntry(@RequestBody VoucherVM voucherVM) {
         try {
-            String message = voucherDetailsService.createEntry(voucherDetailsVM);
+            String message = voucherService.createEntry(voucherVM);
             if (StringUtils.isNotEmpty(message)) {
                 return message;
             }
@@ -99,9 +108,9 @@ public class VoucherDetailsResource {
      */
     @ApiOperation(value = "修改数据")
     @RequestMapping(method = RequestMethod.PUT)
-    public String updateEntry(@RequestBody VoucherDetailsVM voucherDetailsVM) {
+    public String updateEntry(@RequestBody VoucherVM voucherVM) {
         try {
-            String message = voucherDetailsService.updateEntry(voucherDetailsVM);
+            String message = voucherService.updateEntry(voucherVM);
             if (StringUtils.isNotEmpty(message)) {
                 return message;
             }
@@ -121,7 +130,7 @@ public class VoucherDetailsResource {
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
     String deleteEntry(@PathVariable long id) {
         try {
-            voucherDetailsService.deleteById(id);
+            voucherService.deleteById(id);
             return JsonResult.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), null);
         } catch (ServiceException serviceException) {
             throw serviceException;
@@ -132,16 +141,13 @@ public class VoucherDetailsResource {
     }
 
     /**
-     * 批量新增
+     * 导出
      */
-    @ApiOperation(value = "批量新增")
-    @RequestMapping(value = "/createEntryBanch", method = RequestMethod.POST)
-    String createEntryBanch(@RequestBody List<VoucherDetailsVM> voucherDetailsVMS) {
+    @ApiOperation(value = "导出")
+    @RequestMapping(value = "/exportVoucher", method = RequestMethod.POST)
+    String exportVoucher(@Param(value = "ids") String ids, HttpServletResponse response, HttpServletRequest request) {
         try {
-            String message = voucherDetailsService.createEntryBanch(voucherDetailsVMS);
-            if (StringUtils.isNotEmpty(message)) {
-                return message;
-            }
+            voucherService.export(ids, response, request);
             return JsonResult.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), null);
         } catch (ServiceException serviceException) {
             throw serviceException;
@@ -152,22 +158,19 @@ public class VoucherDetailsResource {
     }
 
     /**
-     * 批量修改
+     * 同步NCC
      */
-    @ApiOperation(value = "批量修改")
-    @RequestMapping(value = "/updateBanch", method = RequestMethod.POST)
-    String updateBanch(@Param(value = "id") long id, @RequestBody List<VoucherDetailsVM> voucherDetailsVMS) {
-        try {
-            String message = voucherDetailsService.checkData(id, voucherDetailsVMS);
-            if (StringUtils.isNotEmpty(message)) {
-                return message;
-            }
-            return JsonResult.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), null);
-        } catch (ServiceException serviceException) {
-            throw serviceException;
-        } catch (Exception e) {
-            ServiceException se = new ServiceException(ImErrorCode.MSG_FAIL, MessageUtils.get(ImErrorCode.MSG_FAIL));
-            throw se;
-        }
+    @ApiOperation(value = "同步NCC")
+    @RequestMapping(value = "/synNCC/{id}", method = RequestMethod.POST)
+    Object synNCC(@PathVariable Integer id) {
+        Object o = voucherService.synNCC(id);
+
+        return o;
+    }
+
+    @ApiOperation(value = "根据PK取消同步")
+    @RequestMapping(value = "/deleteNCC/{pk}", method = RequestMethod.POST)
+    Object deleteNCC(@PathVariable String pk) {
+        return voucherService.deleteNCC(pk);
     }
 }

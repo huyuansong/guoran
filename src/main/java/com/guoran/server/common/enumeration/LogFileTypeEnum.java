@@ -1,36 +1,33 @@
 package com.guoran.server.common.enumeration;
+
 /**
- * 水表电表类型枚举
+ * 日志文件类型
  */
-public enum MeterTypeEnum {
-
-    WATER("水表", 1),
-    ELECTRICITY("电表", 2),
-    GAS("气表", 3);
-
+public enum LogFileTypeEnum implements BaseEnum {
+    IMAGE("图片", 1),
+    FILE("文件", 2);
     /**
-     * 名称
+     * 文本
      */
     private String text;
     /**
-     * ID
+     * key
      */
     private int value;
 
-
-    private MeterTypeEnum(String text, int value) {
+    private LogFileTypeEnum(String text, int value) {
         this.text = text;
         this.value = value;
     }
 
-
     /**
-     * 通过ID来获取名称
+     * 通过值来获取名称
+     *
      * @param value
      * @return
      */
     public static String getText(int value) {
-        for (MeterTypeEnum c : MeterTypeEnum.values()) {
+        for (LogFileTypeEnum c : LogFileTypeEnum.values()) {
             if (c.getValue() == value) {
                 return c.text;
             }
@@ -53,5 +50,4 @@ public enum MeterTypeEnum {
     public void setValue(int value) {
         this.value = value;
     }
-
 }

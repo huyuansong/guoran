@@ -1,36 +1,41 @@
 package com.guoran.server.common.enumeration;
-/**
- * 水表电表类型枚举
- */
-public enum MeterTypeEnum {
 
-    WATER("水表", 1),
-    ELECTRICITY("电表", 2),
-    GAS("气表", 3);
+/**
+ * 是否类型枚举
+ * 客户表使用到的地方如下：
+ * 1.是否可赊销
+ * 2.是否个人
+ * 3.是否默认账户
+ * <p>
+ * 是  &  否
+ */
+public enum WhetherEnum {
+    CONFIRMED("是", 0),
+    UNCONFIRMED("否", 1);
 
     /**
      * 名称
      */
     private String text;
     /**
-     * ID
+     * 状态
      */
     private int value;
 
 
-    private MeterTypeEnum(String text, int value) {
+    private WhetherEnum(String text, int value) {
         this.text = text;
         this.value = value;
     }
 
-
     /**
-     * 通过ID来获取名称
+     * 通过类型来获取名称
+     *
      * @param value
      * @return
      */
     public static String getText(int value) {
-        for (MeterTypeEnum c : MeterTypeEnum.values()) {
+        for (WhetherEnum c : WhetherEnum.values()) {
             if (c.getValue() == value) {
                 return c.text;
             }

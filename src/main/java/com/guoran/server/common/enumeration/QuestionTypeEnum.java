@@ -1,36 +1,39 @@
 package com.guoran.server.common.enumeration;
-/**
- * 水表电表类型枚举
- */
-public enum MeterTypeEnum {
 
-    WATER("水表", 1),
-    ELECTRICITY("电表", 2),
-    GAS("气表", 3);
+/**
+ * 题目类型枚举
+ */
+public enum QuestionTypeEnum implements BaseEnum {
+
+    SINGLE_CHOICE("单选题", 1),
+    MULTIPLE_CHOICE("多选题", 2),
+    TRUE_OR_FALSE("判断题", 3),
+    MULTIPLE_CHOICE_EXPANSION("多选扩充题", 4),
+    ESSAY_QUESTION("问答题", 5);
 
     /**
      * 名称
      */
     private String text;
     /**
-     * ID
+     * 账号状态
      */
     private int value;
 
 
-    private MeterTypeEnum(String text, int value) {
+    private QuestionTypeEnum(String text, int value) {
         this.text = text;
         this.value = value;
     }
 
-
     /**
-     * 通过ID来获取名称
+     * 通过账号类型来获取名称
+     *
      * @param value
      * @return
      */
     public static String getText(int value) {
-        for (MeterTypeEnum c : MeterTypeEnum.values()) {
+        for (QuestionTypeEnum c : QuestionTypeEnum.values()) {
             if (c.getValue() == value) {
                 return c.text;
             }

@@ -1,25 +1,20 @@
-package com.guoran.server.liu.financial.vmodel;
+package com.guoran.server.liu.financial.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import io.swagger.annotations.ApiModelProperty;
+import com.guoran.server.common.BaseOfConcurrencySafeEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.List;
-
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class VoucherVM {
+public class VoucherEntity extends BaseOfConcurrencySafeEntity {
     private Long id;
     /**
      * 上传状态：已上传、待上传、上传失败
-     * 已上传0  待上传1  上传失败 2
      */
     private Integer uploadState;
     /**
@@ -28,7 +23,6 @@ public class VoucherVM {
     private String uploadErrorContent;
     /**
      * 业务类型：销售明细、销售退回
-     * 销售明细 0    销售退回  1
      */
     private Integer businessType;
     /**
@@ -62,60 +56,19 @@ public class VoucherVM {
     /**
      * 制单日期：生成凭证日期
      */
-    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
-    @ApiModelProperty(value = "制单日期")
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date preparationDate;
     /**
      * 会计期间
      */
-    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
-    @ApiModelProperty(value = "会计期间")
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date accountingPeriod;
     /**
      * 凭证编号
      */
     private String voucherCode;
     /**
-     * 子表集合
-     */
-    private List<VoucherDetailsVM> voucherDetailsVMS;
-    /**
      * 制单人
      */
     private String creator;
-    /**
-     * 制单人
-     */
-    private String creatorCode;
-
-    /*
-     * 并发版本号
-     * */
-    private Integer concurrencyVersion;
-    /**
-     * 创建时间
-     */
-    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
-    @ApiModelProperty(value = "创建时间")
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private Date createTime;
-    /**
-     * 创建人
-     */
-    private String createBy;
-    /**
-     * 修改时间
-     */
-    @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
-    @ApiModelProperty(value = "修改时间")
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private Date updateTime;
-    /**
-     * 修改人
-     */
-    private String updateBy;
     /**
      * 凭证上传返回的凭证主键
      */
@@ -124,6 +77,8 @@ public class VoucherVM {
      * 所属公司编码
      */
     private String CompanyCode;
-
-
+    /**
+     * 制单人
+     */
+    private String creatorCode;
 }

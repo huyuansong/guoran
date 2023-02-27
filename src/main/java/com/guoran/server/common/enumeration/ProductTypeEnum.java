@@ -1,12 +1,17 @@
 package com.guoran.server.common.enumeration;
-/**
- * 水表电表类型枚举
- */
-public enum MeterTypeEnum {
 
-    WATER("水表", 1),
-    ELECTRICITY("电表", 2),
-    GAS("气表", 3);
+/**
+ * 产品类型枚举
+ * 产成品
+ * 半成品
+ * 原果
+ */
+public enum ProductTypeEnum {
+
+    FINISHEDPRODUCTS("产成品", 1),
+    SEMIMANUFACTURES("半成品", 2),
+    PRIMARYFRUIT("原果", 3);
+
 
     /**
      * 名称
@@ -18,7 +23,7 @@ public enum MeterTypeEnum {
     private int value;
 
 
-    private MeterTypeEnum(String text, int value) {
+    private ProductTypeEnum(String text, int value) {
         this.text = text;
         this.value = value;
     }
@@ -26,11 +31,12 @@ public enum MeterTypeEnum {
 
     /**
      * 通过ID来获取名称
+     *
      * @param value
      * @return
      */
     public static String getText(int value) {
-        for (MeterTypeEnum c : MeterTypeEnum.values()) {
+        for (ProductTypeEnum c : ProductTypeEnum.values()) {
             if (c.getValue() == value) {
                 return c.text;
             }

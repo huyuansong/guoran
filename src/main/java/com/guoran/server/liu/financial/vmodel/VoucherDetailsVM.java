@@ -7,15 +7,7 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 import java.util.Date;
 
-/**
- * <p>
- * DTO
- * </p>
- *
- * @author zhangjx
- * @create 2020-09-04
- * @Modify By
- */
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

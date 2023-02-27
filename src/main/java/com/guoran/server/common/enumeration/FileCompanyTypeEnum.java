@@ -1,36 +1,36 @@
 package com.guoran.server.common.enumeration;
-/**
- * 水表电表类型枚举
- */
-public enum MeterTypeEnum {
 
-    WATER("水表", 1),
-    ELECTRICITY("电表", 2),
-    GAS("气表", 3);
+/**
+ * 档案所在公司类型枚举
+ */
+public enum FileCompanyTypeEnum {
+
+    GUORAN("果然风情", 1),
+    TIANRUN("郑铁天润", 2);
 
     /**
      * 名称
      */
     private String text;
     /**
-     * ID
+     * key
      */
     private int value;
 
 
-    private MeterTypeEnum(String text, int value) {
+    private FileCompanyTypeEnum(String text, int value) {
         this.text = text;
         this.value = value;
     }
 
-
     /**
      * 通过ID来获取名称
+     *
      * @param value
      * @return
      */
     public static String getText(int value) {
-        for (MeterTypeEnum c : MeterTypeEnum.values()) {
+        for (FileCompanyTypeEnum c : FileCompanyTypeEnum.values()) {
             if (c.getValue() == value) {
                 return c.text;
             }

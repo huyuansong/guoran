@@ -1,36 +1,37 @@
-package com.guoran.server.common.enumeration;
-/**
- * 水表电表类型枚举
- */
-public enum MeterTypeEnum {
+package com.guoran.server.common.enumeration.voucher;
 
-    WATER("水表", 1),
-    ELECTRICITY("电表", 2),
-    GAS("气表", 3);
+/**
+ * 业务类型
+ * 销售明细
+ * 销售退回
+ */
+public enum BusinessTypeEnum {
+    SALDETAL("销售明细", 0),
+    BACKDETAL("销售退回", 1);
 
     /**
      * 名称
      */
     private String text;
     /**
-     * ID
+     * 状态
      */
     private int value;
 
 
-    private MeterTypeEnum(String text, int value) {
+    private BusinessTypeEnum(String text, int value) {
         this.text = text;
         this.value = value;
     }
 
-
     /**
-     * 通过ID来获取名称
+     * 通过类型来获取名称
+     *
      * @param value
      * @return
      */
     public static String getText(int value) {
-        for (MeterTypeEnum c : MeterTypeEnum.values()) {
+        for (BusinessTypeEnum c : BusinessTypeEnum.values()) {
             if (c.getValue() == value) {
                 return c.text;
             }
