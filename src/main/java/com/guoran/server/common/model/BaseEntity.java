@@ -1,4 +1,4 @@
-package com.guoran.server.common;
+package com.guoran.server.common.model;
 
 import io.swagger.annotations.ApiModelProperty;
 

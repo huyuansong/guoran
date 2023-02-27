@@ -1,7 +1,6 @@
 package com.guoran.server.common.utils;
 
 import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -15,7 +14,7 @@ public class EncodeUtil {
      */
     public static String stringToUnicode(String s) {
         try {
-            StringBuffer out = new StringBuffer();
+            StringBuffer out = new StringBuffer("");
             //直接获取字符串的unicode二进制
             byte[] bytes = s.getBytes("unicode");
             //然后将其byte转换成对应的16进制表示即可
@@ -78,7 +77,7 @@ public class EncodeUtil {
                     sb.append(c);
                 } else {
                     byte[] b;
-                    b = Character.toString(c).getBytes(StandardCharsets.UTF_8);
+                    b = Character.toString(c).getBytes("utf-8");
                     for (int j = 0; j < b.length; j++) {
                         int k = b[j];
                         //转换为unsigned integer  无符号integer
@@ -110,20 +109,25 @@ public class EncodeUtil {
         if (s == null || s.equals("")) {
             return null;
         }
-        s = s.toUpperCase();
-        int total = s.length() / 2;
-        //标识字节长度
-        int pos = 0;
-        byte[] buffer = new byte[total];
-        for (int i = 0; i < total; i++) {
-            int start = i * 2;
-            //将字符串参数解析为第二个参数指定的基数中的有符号整数。
-            buffer[i] = (byte) Integer.parseInt(s.substring(start, start + 2), 16);
-            pos++;
+        try {
+            s = s.toUpperCase();
+            int total = s.length() / 2;
+            //标识字节长度
+            int pos = 0;
+            byte[] buffer = new byte[total];
+            for (int i = 0; i < total; i++) {
+                int start = i * 2;
+                //将字符串参数解析为第二个参数指定的基数中的有符号整数。
+                buffer[i] = (byte) Integer.parseInt(s.substring(start, start + 2), 16);
+                pos++;
+            }
+            //通过使用指定的字符集解码指定的字节子阵列来构造一个新的字符串。
+            //新字符串的长度是字符集的函数，因此可能不等于子数组的长度。
+            return new String(buffer, 0, pos, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
         }
-        //通过使用指定的字符集解码指定的字节子阵列来构造一个新的字符串。
-        //新字符串的长度是字符集的函数，因此可能不等于子数组的长度。
-        return new String(buffer, 0, pos, StandardCharsets.UTF_8);
+        return s;
     }
 
 }

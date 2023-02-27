@@ -1,4 +1,4 @@
-package com.guoran.server.common.utils.utils.api.utils;
+package com.guoran.server.common.utils.api.utils;
 
 public class ResultMessageUtil {
 

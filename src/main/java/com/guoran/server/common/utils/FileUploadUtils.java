@@ -1,4 +1,4 @@
-package com.guoran.server.common.utils.utils;
+package com.guoran.server.common.utils;
 
 import com.guoran.server.config.swagger.WebConfig;
 import org.apache.commons.lang3.StringUtils;

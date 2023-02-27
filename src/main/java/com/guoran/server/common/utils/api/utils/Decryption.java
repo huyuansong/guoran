@@ -1,4 +1,4 @@
-package com.guoran.server.common.utils.utils.api.utils;
+package com.guoran.server.common.utils.api.utils;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;

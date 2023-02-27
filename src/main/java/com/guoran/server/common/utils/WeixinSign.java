@@ -1,4 +1,4 @@
-package com.guoran.server.common.utils.utils;
+package com.guoran.server.common.utils;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;

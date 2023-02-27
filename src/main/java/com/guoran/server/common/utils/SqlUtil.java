@@ -1,4 +1,4 @@
-package com.guoran.server.common.utils.utils;
+package com.guoran.server.common.utils;
 
 /**
  * sql操作工具类

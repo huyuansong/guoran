@@ -1,4 +1,4 @@
-package com.guoran.server.common.utils.utils;
+package com.guoran.server.common.utils;
 
 import java.io.IOException;
 import java.io.InputStream;

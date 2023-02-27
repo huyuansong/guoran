@@ -1,4 +1,4 @@
-package com.guoran.server.common.utils.utils;
+package com.guoran.server.common.utils;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;

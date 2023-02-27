@@ -11,6 +11,7 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
@@ -29,11 +30,11 @@ public class NoteUtil {
     //    @Value(value = "${jeecg.noteMessageContent}")
 //    private  String messageContent;
     private static final String BASE_CHECK_CODES = "qwertyuiplkjhgfdsazxcvbnmQWERTYUPLKJHGFDSAZXCVBNM1234567890";
-    /*    @Value(value = "${hr.token.url}")*/
+    @Value(value = "${hr.token.url}")
     private String url;
-    /*   @Value(value = "${hr.username}")*/
+    @Value(value = "${hr.username}")
     private String username;
-    /*   @Value(value = "${hr.password}")*/
+    @Value(value = "${hr.password}")
     private String password;
 
     public String noteLogin() {

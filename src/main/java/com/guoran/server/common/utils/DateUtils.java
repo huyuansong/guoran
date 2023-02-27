@@ -1,4 +1,4 @@
-package com.guoran.server.common.utils.utils;
+package com.guoran.server.common.utils;
 
 import org.apache.commons.lang3.time.DateFormatUtils;
 
