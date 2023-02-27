@@ -1,7 +1,5 @@
-package com.guoran.server.bu.equipment.model;
+package com.guoran.server.bu.equipment.vmodel;
 
-
-import com.guoran.server.common.model.BaseOfConcurrencySafeEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,19 +8,18 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * * <p>
- * 设备管理-设备运行记录-纯净水车间-吹瓶机运行记录
+ * <p>
+ * 设备管理-设备运行记录-纯净水车间-吹瓶机运行记录DTO
  * </p>
- * *
- * w
- * 2023/1/25  14:56
- * 01-pro
- **/
-
+ *
+ * @author zhangjx
+ * @create 2020-08-25
+ * @Modify By
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PurifiedBottleRunInfoEntity extends BaseOfConcurrencySafeEntity {
+public class PurifiedBottleRunInfoVM {
     private Long id;
     /**
      * 部门ID
@@ -97,6 +94,25 @@ public class PurifiedBottleRunInfoEntity extends BaseOfConcurrencySafeEntity {
      */
     private String remark;
 
+    /*
+     * 并发版本号
+     * */
+    private Integer concurrencyVersion;
+    /**
+     * 创建人
+     */
+    private String createBy;
+    /**
+     * 创建时间
+     */
+    private Date createTime;
+    /**
+     * 更新人
+     */
+    private String updateBy;
 
+    /**
+     * 更新时间
+     */
+    private Date updateTime;
 }
-

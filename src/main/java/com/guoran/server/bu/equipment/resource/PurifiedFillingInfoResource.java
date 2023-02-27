@@ -2,9 +2,9 @@ package com.guoran.server.bu.equipment.resource;
 
 
 import com.github.pagehelper.Page;
-import com.guoran.server.bu.equipment.service.PurifiedBottleRunInfoService;
-import com.guoran.server.bu.equipment.vmodel.PurifiedBottleRunInfoVM;
-import com.guoran.server.common.Result;
+import com.guoran.server.bu.equipment.service.PurifiedFillingInfoService;
+import com.guoran.server.bu.equipment.vmodel.PurifiedFillingInfoVM;
+import com.guoran.server.common.JsonResult;
 import com.guoran.server.common.exception.ImErrorCode;
 import com.guoran.server.common.exception.ServiceException;
 import com.guoran.server.common.i18n.MessageUtils;
@@ -17,18 +17,17 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-
 /**
  * w
- * 2023/1/26  19:07
+ * 2023/1/26  19:14
  * 01-pro
  **/
-@Api(tags = {"设备管理-设备运行记录-纯净水车间-吹瓶机运行记录"})
+@Api(tags = {"设备管理-设备运行记录-纯净水车间-灌装记录表"})
 @RestController
-@RequestMapping("/equipment/PurifiedBottleRunInfos")
-public class PurifiedBottleRunInfoResource {
+@RequestMapping("/equipment/PurifiedFillingInfos")
+public class PurifiedFillingInfoResource {
     @Autowired
-    private PurifiedBottleRunInfoService purifiedBottleRunInfoService;
+    private PurifiedFillingInfoService purifiedFillingInfoService;
 
     /**
      * 根据id查询
@@ -38,8 +37,8 @@ public class PurifiedBottleRunInfoResource {
     public String getEntry(@PathVariable long id) {
         String result = null;
         try {
-            PurifiedBottleRunInfoVM purifiedBottleRunInfoVM = purifiedBottleRunInfoService.getEntryBy(id);
-            result = Result.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), purifiedBottleRunInfoVM);
+            PurifiedFillingInfoVM purifiedFillingInfoVM = purifiedFillingInfoService.getEntryBy(id);
+            result = JsonResult.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), purifiedFillingInfoVM);
         } catch (ServiceException serviceException) {
             throw serviceException;
         } catch (Exception e) {
@@ -59,15 +58,15 @@ public class PurifiedBottleRunInfoResource {
         try {
             CheckInputUtil checkInputUtil = new CheckInputUtil();
             if (checkInputUtil.chikcInput(pageQuery)) {
-                return Result.failed("请勿输入特殊字符");
+                return JsonResult.failed("请勿输入特殊字符");
             }
-            Page<PurifiedBottleRunInfoVM> pageInfo = purifiedBottleRunInfoService.findEntrysByPage(pageQuery);
+            Page<PurifiedFillingInfoVM> pageInfo = purifiedFillingInfoService.findEntrysByPage(pageQuery);
             PageResult pageResult = new PageResult();
             pageResult.setPageNum(pageQuery.getPageNum());
             pageResult.setRows(pageInfo);
             pageResult.setTotal(pageInfo.getTotal());
             pageResult.setPages(pageInfo.getPages());
-            result = Result.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), pageResult);
+            result = JsonResult.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), pageResult);
         } catch (ServiceException serviceException) {
             throw serviceException;
         } catch (Exception e) {
@@ -82,13 +81,13 @@ public class PurifiedBottleRunInfoResource {
      */
     @ApiOperation(value = "新增数据")
     @RequestMapping(method = RequestMethod.POST)
-    String createEntry(@RequestBody PurifiedBottleRunInfoVM purifiedBottleRunInfoVM) {
+    String createEntry(@RequestBody PurifiedFillingInfoVM purifiedFillingInfoVM) {
         try {
-            String message = purifiedBottleRunInfoService.createEntry(purifiedBottleRunInfoVM);
-            if (StringUtils.isNotEmpty(message)) {
-                return message;
+            String resultMess = purifiedFillingInfoService.createEntry(purifiedFillingInfoVM);
+            if (StringUtils.isNotEmpty(resultMess)) {
+                return resultMess;
             }
-            return Result.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), null);
+            return JsonResult.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), null);
         } catch (ServiceException serviceException) {
             throw serviceException;
         } catch (Exception e) {
@@ -102,13 +101,13 @@ public class PurifiedBottleRunInfoResource {
      */
     @ApiOperation(value = "修改数据")
     @RequestMapping(method = RequestMethod.PUT)
-    public String updateEntry(@RequestBody PurifiedBottleRunInfoVM purifiedBottleRunInfoVM) {
+    public String updateEntry(@RequestBody PurifiedFillingInfoVM purifiedFillingInfoVM) {
         try {
-            String message = purifiedBottleRunInfoService.updateEntry(purifiedBottleRunInfoVM);
-            if (StringUtils.isNotEmpty(message)) {
-                return message;
+            String resultMess = purifiedFillingInfoService.updateEntry(purifiedFillingInfoVM);
+            if (StringUtils.isNotEmpty(resultMess)) {
+                return resultMess;
             }
-            return Result.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), null);
+            return JsonResult.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), null);
         } catch (ServiceException serviceException) {
             throw serviceException;
         } catch (Exception e) {
@@ -124,8 +123,8 @@ public class PurifiedBottleRunInfoResource {
     @RequestMapping(value = "/delete", method = RequestMethod.DELETE)
     String deleteEntry(String ids) {
         try {
-            purifiedBottleRunInfoService.deleteById(ids);
-            return Result.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), null);
+            purifiedFillingInfoService.deleteById(ids);
+            return JsonResult.success(ImErrorCode.MSG_SUCCESS, MessageUtils.get(ImErrorCode.MSG_SUCCESS), null);
         } catch (ServiceException serviceException) {
             throw serviceException;
         } catch (Exception e) {
@@ -134,4 +133,3 @@ public class PurifiedBottleRunInfoResource {
         }
     }
 }
-

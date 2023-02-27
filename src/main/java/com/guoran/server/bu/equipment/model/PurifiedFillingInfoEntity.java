@@ -10,19 +10,19 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * * <p>
- * 设备管理-设备运行记录-纯净水车间-吹瓶机运行记录
+ * <p>
+ * 设备管理-设备运行记录-纯净水车间-灌装记录表
  * </p>
- * *
+ * <p>
+ * <p>
  * w
- * 2023/1/25  14:56
+ * 2023/1/26  19:09
  * 01-pro
  **/
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PurifiedBottleRunInfoEntity extends BaseOfConcurrencySafeEntity {
+public class PurifiedFillingInfoEntity extends BaseOfConcurrencySafeEntity {
     private Long id;
     /**
      * 部门ID
@@ -53,50 +53,45 @@ public class PurifiedBottleRunInfoEntity extends BaseOfConcurrencySafeEntity {
      */
     private Date noteTakerTime;
     /**
-     * 压力（Mpa）
+     * 液位
      */
-    private BigDecimal programNum;
+    private BigDecimal level;
     /**
-     * 冷干机温度/℃
+     * 进瓶风机
      */
-    private BigDecimal hostRunSpeed;
+    private String bottleFeedingFan;
     /**
-     * 冷却水温度/℃
+     * 主电机
      */
-    private BigDecimal glueMachineTemperature;
+    private String host;
     /**
-     * 温控温度/℃
+     * 进液泵
      */
-    private BigDecimal rubberHoseTemperature;
+    private String feedPump;
     /**
-     * 1加温温度/℃
+     * 出瓶输送
      */
-    private BigDecimal oneTemperature;
+    private String bottleDelivery;
     /**
-     * 2加温温度/℃
+     * 吹气阀
      */
-    private BigDecimal twoTemperature;
+    private String blowValve;
     /**
-     * 3加温温度/℃
+     * 理盖刷机
      */
-    private BigDecimal threeTemperature;
+    private String ligai;
     /**
-     * 4加温温度/℃/℃
+     * 上盖风机
      */
-    private BigDecimal fourTemperature;
+    private String topCoverFan;
     /**
-     * 5加温温度/℃
+     * 上盖输送
      */
-    private BigDecimal fiveTemperature;
-    /**
-     * 使用瓶胚生产日期
-     */
-    private Date productionDate;
+    private String upperCoverConveying;
     /**
      * 备注
      */
     private String remark;
-
 
 }
 
