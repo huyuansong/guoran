@@ -6,5 +6,8 @@ import com.guoran.server.shen.sales.vmodel.OrderManagementSalesOrderVM;
 
 
 public interface OrderManagementSalesOrderService {
-	Page<OrderManagementSalesOrderVM> findEntrysByPage(PageQuery pageQuery, OrderManagementSalesOrderVM orderManagementSalesOrderVM, String status);
+    Page<OrderManagementSalesOrderVM> findEntrysByPage(PageQuery pageQuery, OrderManagementSalesOrderVM orderManagementSalesOrderVM, String status);
+
+    String saveEntry(OrderManagementSalesOrderVM orderManagementSalesOrderVM);
+
 }

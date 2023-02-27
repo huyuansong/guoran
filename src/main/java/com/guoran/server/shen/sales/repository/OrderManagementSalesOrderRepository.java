@@ -16,4 +16,7 @@ public interface OrderManagementSalesOrderRepository {
      */
 
     Page<OrderManagementSalesOrderVM> findEntrysByPage(@Param("where") String where);
+
+    void saveEntry(OrderManagementSalesOrderVM orderManagementSalesOrderVM);
+
 }

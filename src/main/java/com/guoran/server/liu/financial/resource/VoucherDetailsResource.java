@@ -19,16 +19,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * <p>
- * rest接口
- * </p>
- *
- * @author zhangjx
- * @create 2020-09-04
- * @Modify By
- */
-@Api(tags = {""})
+
+@Api(tags = {"财务管理"})
 @RestController
 @RequestMapping("/financial/voucherDetails")
 public class VoucherDetailsResource {

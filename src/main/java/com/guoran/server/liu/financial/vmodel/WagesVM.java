@@ -7,15 +7,7 @@ import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 import java.util.Date;
 
-/**
- * <p>
- * 财务管理-工资管理DTO
- * </p>
- *
- * @author zhangjx
- * @create 2020-08-28
- * @Modify By
- */
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

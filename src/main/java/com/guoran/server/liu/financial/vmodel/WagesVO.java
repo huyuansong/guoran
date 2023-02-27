@@ -6,11 +6,6 @@ import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 
-/**
- * @author zhangmengyu
- * @create 2020/11/12 15:12
- * @Modify By
- */
 
 @Data
 @AllArgsConstructor

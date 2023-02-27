@@ -11,15 +11,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
-/**
- * <p>
- * 财务管理-凭证管理DTO
- * </p>
- *
- * @author zhangjx
- * @create 2020-08-28
- * @Modify By
- */
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

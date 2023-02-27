@@ -4,6 +4,7 @@ import com.github.pagehelper.Page;
 import com.guoran.server.common.search.PageQuery;
 import com.guoran.server.he.production.vmodel.ManagementAnnualTotalVM;
 import com.guoran.server.he.production.vmodel.ManagementAnnualVM;
+import com.guoran.server.he.production.vo.ProductionQualityVo;
 
 import java.util.List;
 
@@ -35,4 +36,40 @@ public interface ManagementAnnualTotalService {
      */
     List<ManagementAnnualVM> findEntrysPagetotal(long id);
 
+
+    /**
+     * 新增
+     *
+     * @param managementAnnualTotalVM
+     * @return
+     */
+    String createEntry(ManagementAnnualTotalVM managementAnnualTotalVM);
+
+    /**
+     * 修改
+     *
+     * @param managementAnnualTotalVM
+     */
+    String updateEntry(ManagementAnnualTotalVM managementAnnualTotalVM);
+
+    /**
+     * 审核
+     *
+     * @param auditUpdates
+     */
+    boolean auditById(ProductionQualityVo auditUpdates);
+
+    /**
+     * 删除
+     *
+     * @param ids
+     */
+    boolean deleteById(String ids);
+
+    /**
+     * 年度计划是否重复
+     *
+     * @param budgetYear 年份
+     */
+    boolean queryBudgetYearCont(String budgetYear);
 }
