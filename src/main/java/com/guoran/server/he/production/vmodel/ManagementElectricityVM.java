@@ -1,7 +1,5 @@
-package com.guoran.server.he.production.model;
+package com.guoran.server.he.production.vmodel;
 
-
-import com.guoran.server.common.model.BaseOfConcurrencySafeEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,19 +8,13 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 /**
- * <p>
- * 生产电费记录表
- * </p>
- *
- * @author
- * @table production_management_electricity
- * @create
- * @Modify By
+ * @time 2023/2/2714:31
+ * @outhor zhou
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class ManagementElectricityEntity extends BaseOfConcurrencySafeEntity {
+public class ManagementElectricityVM {
     /**
      * 电费表id
      */
@@ -79,14 +71,35 @@ public class ManagementElectricityEntity extends BaseOfConcurrencySafeEntity {
      * 用电量
      */
     private BigDecimal electricityConsumption;
+
+    /*
+     * 并发版本号
+     * */
+    private Integer concurrencyVersion;
+    /**
+     * 创建时间
+     */
+    private Date createTime;
+    /**
+     * 创建人
+     */
+    private String createBy;
+    /**
+     * 修改时间
+     */
+    private Date updateTime;
+    /**
+     * 修改人
+     */
+    private String updateBy;
+
     /**
      * 审核时间
      */
     private Date auditTime;
 
     /*
-     *驳回原因
+     *年度计划驳回原因
      */
     private String auditRejectReason;
-
 }

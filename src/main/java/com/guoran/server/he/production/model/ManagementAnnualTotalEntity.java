@@ -1,6 +1,7 @@
 package com.guoran.server.he.production.model;
 
-import com.guoran.server.common.BaseOfConcurrencySafeEntity;
+
+import com.guoran.server.common.model.BaseOfConcurrencySafeEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
